@@ -1,57 +1,29 @@
+@import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css);
+
+:root {
+  --wrap: 1420px;
+}
+
+html {
+  overflow-x: hidden;
+}
 body {
   --transform-top: 0;
   --transform-bottom: 0;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
+  /* -ms-text-size-adjust: 100%; */
+  /* -webkit-text-size-adjust: 100%; */
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
-/* header */
-header{
-  position: fixed;
-  left: 0;
-  top: 0;
+#wrap {
   width: 100%;
-  height: 80px;
-  background-color: none;
-  z-index: 10;
-}
-header>.logo{
-  position: absolute;
-  left: 250px;
-  top: 23px;
-  width: 36px;
-  background-image: url(../images/Mask\ group.png);
-}
-header>.logo>a{
-  display: block;
-  height: 36px;
-  text-indent: -9999px;
-}
-header>.menu{
-  position: absolute;
-  top: 32px;
-  right: 250px;
-  width: 20%;
-}
-header>.menu>.container{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-header>.menu>.container>li{}
-header>.menu>.container>li>a{
-  color: #fff;
+  /* height: 9626px; */
+  /* overflow: hidden; */
 }
 
-
-/* section */
-section {
-  height: 100vh;
-}
 .curve {
   position: absolute;
   z-index: 3;
@@ -73,3 +45,202 @@ section {
   transform-origin: top;
   margin-top: -1px;
 }
+
+/************ header **************/
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background-color: none;
+  z-index: 10;
+}
+
+.header_wrap {
+  width: 1420px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+header > .logo {
+  position: absolute;
+  left: 250px;
+  top: 23px;
+  width: 36px;
+  background-image: url(../images/Mask\ group.png);
+}
+header > .logo > a {
+  display: block;
+  height: 36px;
+  text-indent: -9999px;
+}
+header > .menu {
+  position: absolute;
+  top: 32px;
+  right: 250px;
+  width: 20%;
+}
+header > .menu > .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+header > .menu > .container > li {
+  color: #fff;
+}
+
+/************ header **************/
+
+/************ banner **************/
+
+.banner {
+  width: 100%;
+  background-color: #000;
+}
+
+/************ banner **************/
+
+.banner {
+  width: 100%;
+  height: 100vh;
+}
+/************ exhibition **************/
+
+.exhibition_info_wrap {
+  width: 100%;
+  height: 2360px;
+  background-color: #eee;
+}
+
+/************ exhibition **************/
+
+/************ wrok **************/
+
+.work_wrap {
+  width: 100%;
+  height: 2700px;
+  background-color: #fff;
+}
+
+.work {
+  width: var(--wrap);
+  margin: 0 auto;
+}
+
+.work_title {
+  font-family: "NanumSquare", sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.work_btn_wrap {
+  width: 1320px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.work_btn_wrap ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.work_btn {
+  width: 203px;
+  height: 40px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  font-family: "NanumSquare", sans-serif;
+  text-align: center;
+  line-height: 40px;
+}
+
+.work_card_wrap {
+  width: var(--wrap);
+  margin: 50px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.work_card {
+  width: 340px;
+  height: 414px;
+  margin: 0 20px 24px 0;
+  position: relative;
+  border: 1px solid #222;
+  box-sizing: border-box;
+}
+
+.work_card:nth-child(4n) {
+  margin-right: 0;
+}
+
+.work_card_name {
+}
+
+.work_card_categori {
+}
+
+.work_card_img {
+  width: 340px;
+  height: 380px;
+  background-color: #eee;
+}
+
+/************ work **************/
+
+/************ poftfolio **************/
+
+.protfolio_wrap {
+  width: 100%;
+  height: 2400px;
+  background-color: #000;
+}
+
+/************ portfolio **************/
+
+/************ infomation **************/
+
+.information_wrap {
+  width: 100%;
+  height: 1430px;
+  background-color: #fff;
+}
+
+/************ infomation **************/
+
+/************ footer **************/
+
+.footer_wrap {
+  width: 100%;
+  height: 280px;
+  background-color: #2a2a2a;
+}
+
+footer {
+  width: var(--wrap);
+  margin: 0 auto;
+  color: #eee;
+  font-family: "NanumSquare", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 80px;
+}
+
+footer .logo {
+  width: 220px;
+  height: 76px;
+  background: url(../images/logo_gray.png) no-repeat;
+  background-size: 220px;
+}
+
+footer .footer_text {
+  font-size: 14px;
+  text-align: right;
+  line-height: 30px;
+}
+/************ footer **************/

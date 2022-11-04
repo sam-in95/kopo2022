@@ -8,11 +8,14 @@
 
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/mouse_cursor.css" />
   </head>
   <body>
-    <div class="wrap">
+    <div id="wrap">
       <header>
-        <h1 class="logo"><a href="#">2022 한국폴리텍대학 정수캠퍼스 시각디자인과 졸업전시회</a></h1>
+        <h1 class="logo">
+          <a href="#">2022 한국폴리텍대학 정수캠퍼스 시각디자인과 졸업전시회</a>
+        </h1>
         <nav class="menu">
           <ul class="container">
             <li><a href="#">About</a></li>
@@ -22,7 +25,8 @@
           </ul>
         </nav>
       </header>
-      <section style="background-color: #000000"></section>
+
+      <section class="banner"></section>
       <div class="curve">
         <svg class="top" viewBox="0 0 500 105" PreserveAspectRatio="none">
           <path
@@ -32,13 +36,13 @@
         </svg>
         <svg class="bottom" viewBox="0 0 500 105" PreserveAspectRatio="none">
           <path
-            fill="#dcdcdc"
+            fill="#000000"
             d="M250,0.5c97.9,0,186.3,40,250,104.6V0H0v105.1C63.7,40.5,152.1,0.5,250,0.5z"
           ></path>
         </svg>
       </div>
 
-      <section style="background-color: #eeeeee"></section>
+      <section class="exhibition_info_wrap"></section>
       <div class="curve">
         <svg class="top" viewBox="0 0 500 105" PreserveAspectRatio="none">
           <path
@@ -53,7 +57,35 @@
           ></path>
         </svg>
       </div>
-      <section style="background-color: #ffffff"></section>
+
+      <section class="work_wrap">
+        <div class="work">
+          <h2 class="work_title">Wrok</h2>
+        </div>
+        <div class="work_btn_wrap">
+          <ul>
+            <li class="work_btn" data-cursor="categori" data-name="click">
+              UX/UI
+            </li>
+            <li class="work_btn" data-cursor="categori" data-name="click">
+              WEB
+            </li>
+            <li class="work_btn" data-cursor="categori" data-name="click">
+              Mobile
+            </li>
+            <li class="work_btn" data-cursor="categori" data-name="click">
+              Illustration
+            </li>
+            <li class="work_btn" data-cursor="categori" data-name="click">
+              Marketing
+            </li>
+            <li class="work_btn" data-cursor="categori" data-name="click">
+              Branding
+            </li>
+          </ul>
+        </div>
+        <div class="work_card_wrap"></div>
+      </section>
       <div class="curve">
         <svg class="top" viewBox="0 0 500 105" PreserveAspectRatio="none">
           <path
@@ -67,10 +99,75 @@
             d="M250,0.5c97.9,0,186.3,40,250,104.6V0H0v105.1C63.7,40.5,152.1,0.5,250,0.5z"
           ></path>
         </svg>
+      </div>
+
+      <section class="protfolio_wrap"></section>
+      <div class="curve">
+        <svg class="top" viewBox="0 0 500 105" PreserveAspectRatio="none">
+          <path
+            fill="#000000"
+            d="M250,104.6C152.1,104.6,63.7,64.6,0,0l0,105.1h500V0C436.3,64.6,347.9,104.6,250,104.6z"
+          ></path>
+        </svg>
+        <svg class="bottom" viewBox="0 0 500 105" PreserveAspectRatio="none">
+          <path
+            fill="#000000"
+            d="M250,0.5c97.9,0,186.3,40,250,104.6V0H0v105.1C63.7,40.5,152.1,0.5,250,0.5z"
+          ></path>
+        </svg>
+      </div>
+
+      <section class="information_wrap"></section>
+      <!-- <div class="curve">
+        <svg class="top" viewBox="0 0 500 105" PreserveAspectRatio="none">
+          <path
+            fill="#ffffff"
+            d="M250,104.6C152.1,104.6,63.7,64.6,0,0l0,105.1h500V0C436.3,64.6,347.9,104.6,250,104.6z"
+          ></path>
+        </svg>
+        <svg class="bottom" viewBox="0 0 500 105" PreserveAspectRatio="none">
+          <path
+            fill="#ffffff"
+            d="M250,0.5c97.9,0,186.3,40,250,104.6V0H0v105.1C63.7,40.5,152.1,0.5,250,0.5z"
+          ></path>
+        </svg>
+      </div> -->
+
+      <section class="footer_wrap">
+        <footer>
+          <div class="logo"></div>
+          <p class="footer_text">
+            [04392] 서울특별시 용산구 보광로 73 한국폴리텍대학교
+            서울정수캠퍼스<br />
+            TEL : 02-2001-4001 / FAX : 02-2001-4180 <br />
+            Copyright 2022 ~~~~~~
+          </p>
+        </footer>
+      </section>
+      <!-- <div class="curve">
+        <svg class="top" viewBox="0 0 500 105" PreserveAspectRatio="none">
+          <path
+            fill="#2a2a2a"
+            d="M250,104.6C152.1,104.6,63.7,64.6,0,0l0,105.1h500V0C436.3,64.6,347.9,104.6,250,104.6z"
+          ></path>
+        </svg>
+        <svg class="bottom" viewBox="0 0 500 105" PreserveAspectRatio="none">
+          <path
+            fill="#2a2a2a"
+            d="M250,0.5c97.9,0,186.3,40,250,104.6V0H0v105.1C63.7,40.5,152.1,0.5,250,0.5z"
+          ></path>
+        </svg>
+      </div> -->
+
+      <div id="mouse_cursor">
+        <div></div>
       </div>
     </div>
     <!-- wrap  -->
 
     <script src="script/smoothScroll.js"></script>
+    <script src="script/cardMap.js"></script>
+    <script src="script/mouseCursor.js"></script>
+    <script src="script/script.js"></script>
   </body>
 </html>
