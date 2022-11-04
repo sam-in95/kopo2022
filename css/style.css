@@ -230,7 +230,14 @@ header > .menu > .container > li {
 .protfolio_wrap {
   width: 100%;
   height: 2400px;
+  padding: 128px 250px 0 250px;
+  color: #fff;
   background-color: #000;
+}
+.protfolio_wrap h4{
+  margin-bottom: 120px;
+  font-family: 'NanumSquareExtraBold';
+  font-size: 32px;
 }
 
 /************ portfolio **************/
@@ -240,7 +247,12 @@ header > .menu > .container > li {
 .information_wrap {
   width: 100%;
   height: 1430px;
+  padding: 360px 250px 0 250px;
   background-color: #fff;
+}
+.information_wrap h4{
+  font-family: 'NanumSquareExtraBold';
+  font-size: 32px;
 }
 
 /************ infomation **************/
