@@ -1,4 +1,5 @@
 const nav = document.querySelectorAll("nav ul li");
+const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
   let scrollTop = window.scrollY;
@@ -20,6 +21,13 @@ window.addEventListener("scroll", () => {
     });
   }
 
+  if (scrollTop > 930) {
+    header.style.backgroundColor = "rgba(238,238,238,0.5)";
+    header.style.backdropFilter = "blur(2px)";
+  } else {
+    header.style.backgroundColor = "rgba(238,238,238,0";
+    header.style.backdropFilter = "none";
+  }
   console.log(scrollTop);
 });
 
