@@ -271,14 +271,49 @@ header > .menu > .container > li {
 .protfolio_wrap {
   width: 100%;
   height: 2400px;
-  padding: 128px 250px 0 250px;
   color: #fff;
   background-color: #000;
+}
+
+.portfolio {
+  width: var(--wrap);
+  margin: 0 auto;
 }
 .protfolio_wrap h4 {
   margin-bottom: 120px;
   font-family: "NanumSquareExtraBold";
   font-size: 32px;
+  padding-top: 128px;
+}
+
+.designer_wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+}
+
+.designer_card {
+  margin-right: 19px;
+  margin-bottom: 40px;
+}
+
+.designer_card:nth-child(4n) {
+  margin-right: 0;
+}
+.designer_img {
+  width: 340px;
+  height: 340px;
+  border-radius: 50%;
+  background-size: 501px;
+  background-position: -80px;
+  transition: 0.3s;
+}
+
+.designer_name {
+  font-family: "NanumSquare", sans-serif;
+  font-size: 20px;
+  line-height: 80px;
+  text-align: center;
 }
 
 /************ portfolio **************/

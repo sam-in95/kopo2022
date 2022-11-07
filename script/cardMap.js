@@ -58,3 +58,46 @@ workBtn.forEach((btn) => {
 `;
   });
 });
+
+let designerArray = [
+  { imgGray: "", img: "", name: "강우성" },
+  { imgGray: "", img: "", name: "공지웅" },
+  { imgGray: "", img: "", name: "김가람" },
+  { imgGray: "", img: "", name: "김영준" },
+  { imgGray: "", img: "", name: "김은주" },
+  { imgGray: "", img: "", name: "김정석" },
+  { imgGray: "", img: "", name: "박서연" },
+  { imgGray: "", img: "", name: "박성빈" },
+];
+
+const designerWrap = document.querySelector(".designer_wrap");
+designerWrap.innerHTML = `
+${designerArray
+  .map((el) => {
+    return `
+    <div class="designer_card">
+      <div class="designer_img"></div>
+      <div class="designer_name">${el.name}</div>
+    </div>
+  `;
+  })
+  .join("")}
+`;
+
+const designerImg = document.querySelectorAll(".designer_img");
+designerImg.forEach((img, index) => {
+  img.style.background = `url(../images/person_${index + 1}.png)`;
+  img.style.backgroundSize = "501px";
+  img.style.backgroundPosition = "-81px";
+
+  img.addEventListener("mouseenter", () => {
+    img.style.background = `url(../images/person_${index + 1}_hover.png)`;
+    img.style.backgroundSize = "501px";
+    img.style.backgroundPosition = "-81px";
+  });
+  img.addEventListener("mouseleave", () => {
+    img.style.background = `url(../images/person_${index + 1}.png)`;
+    img.style.backgroundSize = "501px";
+    img.style.backgroundPosition = "-81px";
+  });
+});
