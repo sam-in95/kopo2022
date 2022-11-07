@@ -75,8 +75,8 @@ designerWrap.innerHTML = `
 ${designerArray
   .map((el) => {
     return `
-    <div class="designer_card">
-      <div class="designer_img"></div>
+    <div class="designer_card"> 
+      <div class="designer_img" data-cursor="designer" data-name="view"></div>
       <div class="designer_name">${el.name}</div>
     </div>
   `;

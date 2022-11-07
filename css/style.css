@@ -253,6 +253,15 @@ header > .menu > .container > li {
 }
 
 .work_card_name {
+  position: absolute;
+  left: 25px;
+  bottom: 18px;
+  font-family: "NanumSquare", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 
 .work_card_categori {
@@ -262,6 +271,30 @@ header > .menu > .container > li {
   width: 340px;
   height: 380px;
   background-color: #eee;
+  position: relative;
+}
+
+.work_card_img::after {
+  content: "";
+  display: block;
+  opacity: 0;
+  position: absolute;
+  bottom: 40px;
+  left: 20px;
+  width: 5px;
+  height: 2px;
+  border-radius: 10px;
+  background-color: #222;
+  transition: width 0.5s;
+}
+
+.work_card_img:hover::after {
+  opacity: 1;
+  width: 300px;
+}
+
+.work_card:hover .work_card_name {
+  opacity: 1;
 }
 
 /************ work **************/
@@ -327,17 +360,17 @@ header > .menu > .container > li {
   padding: 360px 250px 0 250px;
   background-color: #fff;
 }
-.information_wrap img{
+.information_wrap img {
   position: absolute;
 }
-.information_wrap img:nth-child(1){
+.information_wrap img:nth-child(1) {
   bottom: 120px;
 }
-.information_wrap img:nth-child(2){
+.information_wrap img:nth-child(2) {
   top: 240px;
   left: 466px;
 }
-.information_wrap img:nth-child(3){
+.information_wrap img:nth-child(3) {
   top: 437px;
   left: 1280px;
 }
@@ -347,7 +380,7 @@ header > .menu > .container > li {
   font-size: 32px;
 }
 
-.information_wrap>.table_container{
+.information_wrap > .table_container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -355,27 +388,26 @@ header > .menu > .container > li {
   margin-top: 108px;
   font-size: 20px;
 }
-.information_wrap th{
+.information_wrap th {
   line-height: 48px;
   font-weight: 800;
 }
-.information_wrap td{
+.information_wrap td {
   padding-bottom: 24px;
   padding-right: 43px;
   line-height: 48px;
 }
-.information_wrap td:last-child{
+.information_wrap td:last-child {
   padding-right: 0;
 }
-.information_wrap th{
+.information_wrap th {
   padding-bottom: 24px;
   text-align: left;
 }
-.information_wrap th.b{
+.information_wrap th.b {
   padding-right: 42px;
   font-weight: 600;
 }
-
 
 /************ infomation **************/
 

@@ -28,7 +28,7 @@ window.addEventListener("scroll", () => {
     header.style.backgroundColor = "rgba(238,238,238,0";
     header.style.backdropFilter = "none";
   }
-  console.log(scrollTop);
+  // console.log(scrollTop);
 });
 
 const conSections = document.querySelectorAll("section");

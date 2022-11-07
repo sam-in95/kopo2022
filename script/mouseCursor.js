@@ -27,6 +27,13 @@ const mouseMove = (e) => {
       stage = "categori";
       cursorParent.className = "cursor_text_mode";
       break;
+    case "designer":
+      cursorChild.setAttribute("data-name", e.target.getAttribute("data-name"));
+      if (stage === "designer") return;
+      scale = 3;
+      stage = "designer";
+      cursorParent.className = "cursor_text_mode";
+      break;
     default:
       if (stage === " ") return;
       scale = 1;
