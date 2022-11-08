@@ -408,6 +408,11 @@ header > .menu > .container > li {
   padding-right: 42px;
   font-weight: 600;
 }
+.information_wrap .short td,
+.information_wrap .short th{
+  padding-bottom: 0;
+  line-height: 28px;
+}
 
 /************ infomation **************/
 
