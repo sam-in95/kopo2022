@@ -146,6 +146,66 @@ header > .menu > .container > li {
   bottom: 140px;
   right: 273px;
 }
+
+.move_dot {
+  position: absolute;
+  top: 30%;
+  left: 100%;
+  z-index: 2;
+  animation: moveDotAnimation1 20s infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.move_dot_2 {
+  top: 70%;
+  left: -100%;
+  transform: rotate(180deg);
+  animation: moveDotAnimation2 30s infinite;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+}
+
+.move_dot::after {
+  content: "";
+  display: block;
+  margin-left: 10px;
+  width: 800px;
+  height: 20px;
+  filter: blur(3px);
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0) 56%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+@keyframes moveDotAnimation1 {
+  0% {
+    left: 100%;
+  }
+  10% {
+    left: -50%;
+  }
+  100% {
+    left: -50%;
+  }
+}
+
+@keyframes moveDotAnimation2 {
+  0% {
+    left: -50%;
+  }
+  10% {
+    left: 120%;
+  }
+  100% {
+    left: 150%;
+  }
+}
 /************ banner **************/
 
 /************ exhibition **************/
@@ -224,11 +284,32 @@ header > .menu > .container > li {
 .work_btn {
   width: 203px;
   height: 40px;
-  border: 1px solid #000;
+  border: 1px solid #888;
+  color: #888;
   border-radius: 50px;
   font-family: "NanumSquare", sans-serif;
   text-align: center;
   line-height: 40px;
+  transition: transform 0.3s;
+}
+
+.work_btn.now {
+  border: 1px solid #222;
+  background-color: #222;
+  color: #eee;
+  animation: workBtnClick 0.3s;
+}
+
+@keyframes workBtnClick {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .work_card_wrap {
@@ -262,9 +343,6 @@ header > .menu > .container > li {
   z-index: 1;
   opacity: 0;
   transition: opacity 0.5s;
-}
-
-.work_card_categori {
 }
 
 .work_card_img {
@@ -383,6 +461,7 @@ header > .menu > .container > li {
 .information_wrap > .table_container {
   display: flex;
   justify-content: space-between;
+  font-family: "NanumSquare", sans-serif;
   align-items: flex-start;
   width: 70%;
   margin-top: 108px;
@@ -406,10 +485,10 @@ header > .menu > .container > li {
 }
 .information_wrap th.b {
   padding-right: 42px;
-  font-weight: 600;
+  font-weight: 700;
 }
 .information_wrap .short td,
-.information_wrap .short th{
+.information_wrap .short th {
   padding-bottom: 0;
   line-height: 28px;
 }

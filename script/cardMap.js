@@ -36,9 +36,18 @@ workCardWrap.innerHTML = `
     .join("")}
 `;
 
+const workBtnClickHandler = (e) => {
+  workBtn.forEach((btn) => {
+    btn.classList.remove("now");
+  });
+  e.target.classList.add("now");
+};
+
 const workBtn = document.querySelectorAll(".work_btn");
 workBtn.forEach((btn) => {
   btn.addEventListener("click", (e) => {
+    workBtnClickHandler(e);
+
     const workCardFilter = workArray.filter((el) => {
       return el.categori === e.target.innerText;
     });
@@ -55,7 +64,7 @@ workBtn.forEach((btn) => {
           `;
         })
         .join("")}
-`;
+      `;
   });
 });
 
