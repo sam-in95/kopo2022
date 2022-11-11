@@ -6,9 +6,11 @@
 }
 
 html {
+  /* overflow: hidden; */
   overflow-x: hidden;
 }
 body {
+  width: 100%;
   --transform-top: 0;
   --transform-bottom: 0;
   /* -ms-text-size-adjust: 100%; */
@@ -69,6 +71,8 @@ header > .logo > a {
   display: block;
   height: 36px;
   text-indent: -9999px;
+  text-decoration: none;
+  color: inherit;
 }
 header > .menu {
   position: absolute;
@@ -101,8 +105,8 @@ header > .menu > .container > li {
   color: #dcdcdc;
   font-weight: bold;
   position: absolute;
-  top: 45%;
-  left: 1000px;
+  top: 120px;
+  left: 780px;
 }
 
 .dot_round {
@@ -213,34 +217,51 @@ header > .menu > .container > li {
 .exhibition_info_wrap {
   position: relative;
   width: 100%;
-  height: 2360px;
+  height: 1260px;
   padding: 240px 250px 0 250px;
   background-color: #eee;
+  overflow: hidden;
 }
 .exhibition_info_wrap h4 {
   margin-bottom: 24px;
   font-family: "NanumSquareExtraBold";
   font-size: 32px;
 }
+
+.exhibition_info_wrap h5 {
+  font-family: "NanumSquareBold";
+  font-size: 26px;
+}
+
+.digital_design h5 {
+  margin: 40px 0 16px 0;
+}
+
 .exhibition_info_wrap p {
   margin-bottom: 24px;
   line-height: 38px;
   font-family: "NanumSquare";
   font-size: 20px;
 }
+
+.exhibition_info_wrap .first_text {
+  margin-top: 30px;
+}
+
 .exhibition_info_wrap .dot {
-  margin-top: 690px;
+  margin-top: 380px;
   margin-bottom: 80px;
+  margin-left: 195px;
 }
 .exhibition_info_wrap img.dot_b_01 {
   position: absolute;
-  top: 430px;
+  top: 60px;
   left: 1330px;
 }
 .exhibition_info_wrap img.dot_b_02 {
   position: absolute;
   left: 0;
-  top: 1420px;
+  top: 920px;
 }
 /* .exhibition_info_wrap p:nth-child(2),
 .exhibition_info_wrap p:nth-child(3){
@@ -314,10 +335,74 @@ header > .menu > .container > li {
 
 .work_card_wrap {
   width: var(--wrap);
+  position: relative;
+  height: 2300px;
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
+  overflow: hidden;
   justify-content: start;
+}
+
+/* 20개 이상일 때 */
+.work_card_wrap .slide_wrap {
+  width: 2840px;
+  display: flex;
+  position: absolute;
+  transition: ease 0.5s;
+}
+
+.work_card_wrap .slide_wrap .slide {
+  width: var(--wrap);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: start;
+}
+
+.slide_btn {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.slide_prev,
+.slide_next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  border: 1px solid #222;
+}
+
+.slide_prev {
+  background: url(../images/chevron-left.png) no-repeat;
+  background-size: 8px;
+  background-position: 16px 14px;
+}
+
+.slide_next {
+  background: url(../images/chevron-right.png) no-repeat;
+  background-size: 8px;
+  background-position: 18px 14px;
+}
+
+.slide_prev.disable {
+  border: 1px solid #888;
+  background: url(../images/chevron-left_gray.png) no-repeat;
+  background-size: 8px;
+  background-position: 16px 14px;
+}
+
+.slide_next.disable {
+  border: 1px solid #888;
+  background: url(../images/chevron-right_gray.png) no-repeat;
+  background-size: 8px;
+  background-position: 18px 14px;
 }
 
 .work_card {
@@ -381,7 +466,7 @@ header > .menu > .container > li {
 
 .protfolio_wrap {
   width: 100%;
-  height: 2400px;
+  height: 2700px;
   color: #fff;
   background-color: #000;
 }
@@ -404,7 +489,7 @@ header > .menu > .container > li {
 }
 
 .designer_card {
-  margin-right: 19px;
+  margin-right: 140px;
   margin-bottom: 40px;
 }
 
@@ -412,9 +497,8 @@ header > .menu > .container > li {
   margin-right: 0;
 }
 .designer_img {
-  width: 340px;
-  height: 340px;
-  border-radius: 50%;
+  width: 250px;
+  height: 330px;
   background-size: 501px;
   background-position: -80px;
   transition: 0.3s;

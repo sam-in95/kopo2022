@@ -34,6 +34,20 @@ const mouseMove = (e) => {
       stage = "designer";
       cursorParent.className = "cursor_text_mode";
       break;
+    case "prevBtn":
+      cursorChild.setAttribute("data-name", e.target.getAttribute("data-name"));
+      if (stage === "prevBtn") return;
+      scale = 3;
+      stage = "prevBtn";
+      cursorParent.className = "cursor_text_mode";
+      break;
+    case "nextBtn":
+      cursorChild.setAttribute("data-name", e.target.getAttribute("data-name"));
+      if (stage === "nextBtn") return;
+      scale = 3;
+      stage = "nextBtn";
+      cursorParent.className = "cursor_text_mode";
+      break;
     default:
       if (stage === " ") return;
       scale = 1;

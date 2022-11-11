@@ -3,15 +3,7 @@ const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
   let scrollTop = window.scrollY;
-  if (scrollTop > 650 && scrollTop < 5760) {
-    nav.forEach((navColor) => {
-      navColor.style.color = "#000";
-    });
-  } else if (scrollTop > 5760 && scrollTop < 8130) {
-    nav.forEach((navColor) => {
-      navColor.style.color = "#fff";
-    });
-  } else if (scrollTop > 8130) {
+  if (scrollTop > 890) {
     nav.forEach((navColor) => {
       navColor.style.color = "#000";
     });
@@ -20,6 +12,19 @@ window.addEventListener("scroll", () => {
       navColor.style.color = "#fff";
     });
   }
+  // else if (scrollTop > 5760 && scrollTop < 8130) {
+  //   nav.forEach((navColor) => {
+  //     navColor.style.color = "#fff";
+  //   });
+  // } else if (scrollTop > 8130) {
+  //   nav.forEach((navColor) => {
+  //     navColor.style.color = "#000";
+  //   });
+  // } else {
+  //   nav.forEach((navColor) => {
+  //     navColor.style.color = "#fff";
+  //   });
+  // }
 
   if (scrollTop > 930) {
     header.style.backgroundColor = "rgba(238,238,238,0.5)";
@@ -32,6 +37,14 @@ window.addEventListener("scroll", () => {
 });
 
 const conSections = document.querySelectorAll("section");
+const Logo = document.querySelector(".logo");
+Logo.addEventListener("click", (e) => {
+  e.preventDefault();
+  conSections[0].scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+  });
+});
 
 nav.forEach((btn, index) => {
   btn.addEventListener("click", (e) => {

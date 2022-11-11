@@ -1,0 +1,43 @@
+#intro {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: 999;
+}
+
+#intro svg {
+  position: absolute;
+  top: 0;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  background-color: #dcdcdc;
+}
+
+.svg_text {
+  position: absolute;
+  font-size: 1.3rem;
+  text-align: center;
+  display: block;
+  /* width: 200px; */
+  /* background-color: blue; */
+}
+
+.svg_text_1 {
+  top: 50.5%;
+  left: 17%;
+}
+
+.svg_text_2 {
+  top: 50.5%;
+  left: 42%;
+  opacity: 0;
+}
+
+.svg_text_3 {
+  top: 49.8%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  color: #dcdcdc;
+  /* transform: translateX(-50%); */
+}
