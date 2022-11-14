@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>네스프레소 - 캡슐</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/header_footer.css" />
+    <link rel="stylesheet" href="capsule_style.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <div class="alert_nav_wrap">
+          <div class="alert_nav">
+            6만원 이상 결제 시, 무료배송 | <a href="#">택배사 파업 지속으로 인한 배송 지연 안내</a>
+            <button class="esc"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+        </div>
+
+        <div class="main_header_wrap">
+          <div class="main_header">
+            <div class="logo">
+              <h1>
+                <a href="#">
+                  <img src="../img/logo_nespresso_white.png" alt="#" />
+                </a>
+              </h1>
+            </div>
+
+            <div class="login_n_basket">
+              <div class="login_btn header_btn">
+                <a href="#">
+                  <div class="login_icon icon"><i class="fa-solid fa-user"></i></div>
+                  <p>로그인</p>
+                </a>
+              </div>
+              <div class="basket_btn header_btn">
+                <a href="#">
+                  <div class="basket_icon icon"><i class="fa-solid fa-basket-shopping"></i></div>
+                  <p>장바구니</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- main_header -->
+        </div>
+        <!-- main_header_wrap -->
+
+        <nav>
+          <div class="nav_wrap">
+            <ul>
+              <li>
+                <a href="#">머신</a>
+                <ul class="sub_nav">
+                  <li><a href="#">버츄오 머신</a></li>
+                  <li><a href="#">오리지널 머신</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="capsule/index.html">커피</a>
+                <ul class="sub_nav">
+                  <li><a href="capsule/index.html">버츄오 캡슐</a></li>
+                  <li><a href="#">오리지널 캡슐</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">악세서리</a>
+                <ul class="sub_nav">
+                  <li><a href="#">에어로치노</a></li>
+                  <li><a href="#">스낵 및 소품</a></li>
+                  <li><a href="#">머신 부속품</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">고객지원</a>
+                <ul class="sub_nav">
+                  <li><a href="#">자주하는 질문</a></li>
+                  <li><a href="#">주문 / 배송 조회</a></li>
+                  <li><a href="#">머신 사용 안내</a></li>
+                  <li><a href="#">재활용 팩 수거</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">프로페셔널</a>
+                <ul class="sub_nav">
+                  <li><a href="#">기업용 머신</a></li>
+                  <li><a href="#">기업용 커피</a></li>
+                  <li><a href="#">커피 솔루션 찾기</a></li>
+                  <li><a href="#">문의하기</a></li>
+                </ul>
+              </li>
+            </ul>
+            <div class="sub_nav_back_wrap">
+              <div class="sub_nav_back">
+                <div class="sub_nav_color sub_nav_1"></div>
+                <div class="sub_nav_color sub_nav_2"></div>
+                <div class="sub_nav_color sub_nav_3"></div>
+                <div class="sub_nav_color sub_nav_4"></div>
+                <div class="sub_nav_color sub_nav_5"></div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <!-- banner -->
+      <div class="banner_wrap">
+        <div class="banner">
+          <div class="site_map">
+            <a href="../index.html">네스프레소 /</a>
+            <a href="#">커피</a>
+          </div>
+          <div class="banner_text">
+            <h3>네스프레소 커피</h3>
+            <p>마일드한 커피부터 강렬한 커피까지 다양한 스타일의 커피를 경험해보세요.</p>
+          </div>
+          <div class="banner_img"></div>
+        </div>
+      </div>
+      <!-- banner -->
+
+      <!-- section -->
+      <div class="capsule_tap_wrap">
+        <div class="capsule_tap">
+          <div class="vertuo_tap tap_btn on">
+            <div class="vertuo_icon tap_icon"></div>
+            <p>버츄오</p>
+          </div>
+          <div class="original_tap tap_btn">
+            <div class="original_icon tap_icon"></div>
+            <p>오리지널</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="capsule_wrap">
+        <!-- vertuo -->
+        <div class="vertuo_capsule capsule_con">
+          <div class="capsule_text">
+            <h3>네스프레소 버츄오 커피</h3>
+            <p>
+              풍성한 크레마와 깊은 바디감의 커피를<br />
+              에스프레소부터 핸드 드립 스타일까지 5가지 커피 스타일로 즐겨보세요.
+            </p>
+          </div>
+
+          <div class="search">
+            <form action="">
+              <div class="filter">
+                <p class="filter_text">필터</p>
+                <i class="fa-solid fa-filter"></i>
+              </div>
+              <input class="input_box" type="text" placeholder="검색어를 입력해주세요." />
+              <select class="align">
+                <i class="fa-solid fa-caret-down"></i>
+                <option value="1">추천순</option>
+                <option value="2">낮은가격순</option>
+                <option value="3">높은가격순</option>
+                <option value="4">이름순</option>
+              </select>
+            </form>
+          </div>
+
+          <div class="capsule_categori sleve">
+            <div class="categori_head">
+              <p class="name">슬리브 팩</p>
+              <p class="copy">네스프레소에서 엄선한 인기커피를 취향에 따라 즐겨보세요.</p>
+            </div>
+            <div class="capsule_card_wrap">
+              <ul>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img src="../img/capsule/vertuo_next_pack.png" alt="#" />
+                    <p class="capsule_title">
+                      버츄오 넥스트<br />
+                      버라이어티 74팩
+                    </p>
+                    <p class="capsule_price">72,200원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      다양한 커피 스타일을 담은<br />
+                      버츄오 넥스트 전용 커피 팩
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img src="../img/capsule/vertuo_discovery_pack.png" alt="#" />
+                    <p class="capsule_title">
+                      버츄오 디스커버리<br />
+                      셀렉션 100팩
+                    </p>
+                    <p class="capsule_price">84,900원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      다양한 커피 스타일을 한번에 만나볼 수 있는<br />
+                      버츄오 커피 팩
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img src="../img/capsule/vertuo_mild_pack.png" alt="#" />
+                    <p class="capsule_title">버츄오 마일드 팩</p>
+                    <p class="capsule_price">52,200원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      네스프레소가 엄선한<br />
+                      부드럽고 마일드한 버츄오 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img src="../img/capsule/vertuo_intenso_pack.png" alt="#" />
+                    <p class="capsule_title">버츄오 인텐스 팩</p>
+                    <p class="capsule_price">47,800원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      네스프레소가 엄선한 진하고<br />
+                      강렬한 풍미의 버츄오 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img src="../img/capsule/vertuo_barista_pack.png" alt="#" />
+                    <p class="capsule_title">
+                      버츄오 바리스타<br />
+                      크리에이션 팩
+                    </p>
+                    <p class="capsule_price">44,900원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      밀크 레시피와 조화를 이루는<br />
+                      버츄오 커피
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="capsule_categori new_vertuo">
+            <div class="categori_head">
+              <p class="name">NEW 버츄오 커피</p>
+              <p class="copy">새로운 버츄오 커피를 만나보세요.</p>
+            </div>
+            <div class="capsule_card_wrap">
+              <ul>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_carafe.png" alt="#" />
+                    <p class="capsule_title">
+                      카라프 푸어오버<br />
+                      스타일
+                    </p>
+                    <div class="capsule_info">
+                      <div class="size pure_over"><img src="../img/icon_vertuo_535ml.png" alt="#" />535ML</div>
+                    </div>
+                    <p class="capsule_price">1,500원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">로스팅향과 스모키향</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_carafe_mild.png" alt="#" />
+                    <p class="capsule_title">
+                      카라프 푸어오버<br />
+                      스타일 마일드
+                    </p>
+                    <div class="capsule_info">
+                      <div class="size pure_over"><img src="../img/icon_vertuo_535ml.png" alt="#" />535ML</div>
+                    </div>
+                    <p class="capsule_price">1,500원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">고소한 곡물향, 맥아향</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_double_espresso_dolce.png" alt="#" />
+                    <p class="capsule_title">
+                      더블 에스프레소<br />
+                      돌체
+                    </p>
+                    <div class="capsule_info">
+                      <div class="size"><img src="../img/icon_vertuo_80ml.png" alt="#" />80ML</div>
+                    </div>
+                    <p class="capsule_price">820원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">곡물향과 맥아향</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="capsule_categori espresso">
+            <div class="categori_head">
+              <p class="name">에스프레소 (40ML ~ 80ML)</p>
+              <p class="copy">다양한 강도와 맛을 지닌 블렌드가 당신의 감각을 깨워주는 진정한 커피 경험을 선사합니다.</p>
+            </div>
+            <div class="capsule_card_wrap">
+              <ul>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/vertuo_double_espresso_scuro.png" alt="#" />
+                    <p class="capsule_title">
+                      더블 에스프레소<br />
+                      스쿠로
+                    </p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 8</div>
+                      <div class="size"><img src="../img/icon_vertuo_80ml.png" alt="#" />80ML</div>
+                    </div>
+                    <p class="capsule_price">820원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">진하고 강렬한 풍미</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/vertuo_double_espresso_chiaro.png" alt="#" />
+                    <p class="capsule_title">
+                      더블 에스프레소<br />
+                      키아로
+                    </p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 6</div>
+                      <div class="size"><img src="../img/icon_vertuo_80ml.png" alt="#" />80ML</div>
+                    </div>
+                    <p class="capsule_price">820원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">진하고 와일드한 풍미</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/vertuo_double_espresso_dolce.png" alt="#" />
+                    <p class="capsule_title">
+                      더블 에스프레소<br />
+                      돌체
+                    </p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 5</div>
+                      <div class="size"><img src="../img/icon_vertuo_80ml.png" alt="#" />80ML</div>
+                    </div>
+                    <p class="capsule_price">820원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">곡물향과 맥아향</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/vertuo_espresso_diavolitto.png" alt="#" />
+                    <p class="capsule_title">디아볼리토</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 11</div>
+                      <div class="size"><img src="../img/icon_vertuo_40ml.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">690원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">매우 진하고 강렬함</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/vertuo_espresso_il_caffe.png" alt="#" />
+                    <p class="capsule_title">일카페</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 11</div>
+                      <div class="size"><img src="../img/icon_vertuo_40ml.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">690원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">강렬함과 벨벳같은 부드러움</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/vertuo_espresso_altassio.png" alt="#" />
+                    <p class="capsule_title">알티시오</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 9</div>
+                      <div class="size"><img src="../img/icon_vertuo_40ml.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">690원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">진하고 강렬한 풍미</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/vertuo_espresso_orafio.png" alt="#" />
+                    <p class="capsule_title">오라피오</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 8</div>
+                      <div class="size"><img src="../img/icon_vertuo_40ml.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">690원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">카라멜향과 로스팅향</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/vertuo_espresso_voltessio.png" alt="#" />
+                    <p class="capsule_title">볼테소</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 4</div>
+                      <div class="size"><img src="../img/icon_vertuo_40ml.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">690원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">진하고 강렬한 풍미</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/vertuo_espresso_altissio_decaffee.png" alt="#" />
+                    <p class="capsule_title">알티시오 디카페나토</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 9</div>
+                      <div class="size"><img src="../img/icon_vertuo_40ml.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">720원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">깊은 바디감과 크리미한 풍미</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="capsule_categori coffee">
+            <div class="categori_head">
+              <p class="name">커피 (150ML ~ 230ML)</p>
+              <p class="copy">풍성한 크레마의 버츄오 커피를 마시는 즐거움을 조금 더 오래 즐겨 보세요.</p>
+            </div>
+            <div class="capsule_card_wrap">
+              <ul>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_coffee_intenso.png" alt="#" />
+                    <p class="capsule_title">인텐소</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 9</div>
+                      <div class="size"><img src="../img/icon_vertuo_230ml.png" alt="#" />230ML</div>
+                    </div>
+                    <p class="capsule_price">880원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">깊고 진한 풍미</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_coffee_stormio.png" alt="#" />
+                    <p class="capsule_title">스토미오</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 8</div>
+                      <div class="size"><img src="../img/icon_vertuo_230ml.png" alt="#" />230ML</div>
+                    </div>
+                    <p class="capsule_price">880원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">풍부하고 강렬한 풍미</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_coffee_odacio.png" alt="#" />
+                    <p class="capsule_title">오다치오</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 7</div>
+                      <div class="size"><img src="../img/icon_vertuo_230ml.png" alt="#" />230ML</div>
+                    </div>
+                    <p class="capsule_price">880원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">뚜렷하고 상쾌한 풍미</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_coffee_melozio.png" alt="#" />
+                    <p class="capsule_title">멜로지오</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 6</div>
+                      <div class="size"><img src="../img/icon_vertuo_230ml.png" alt="#" />230ML</div>
+                    </div>
+                    <p class="capsule_price">880원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">부드럽고 균형 잡힌 풍미</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_coffee_solelio.png" alt="#" />
+                    <p class="capsule_title">솔레리오</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 2</div>
+                      <div class="size"><img src="../img/icon_vertuo_230ml.png" alt="#" />230ML</div>
+                    </div>
+                    <p class="capsule_price">880원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">과일향과 가벼운 바디감</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_coffee_half_caffeinato.png" alt="#" />
+                    <p class="capsule_title">하프 카페나토</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 5</div>
+                      <div class="size"><img src="../img/icon_vertuo_230ml.png" alt="#" />230ML</div>
+                    </div>
+                    <p class="capsule_price">930원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      디카페인 커피가 절반 블렌딩 된<br />
+                      비스킷 향의 크리미한 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_coffee_melozio_decaffe.png" alt="#" />
+                    <p class="capsule_title">멜로지오 디카페나토</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 6</div>
+                      <div class="size"><img src="../img/icon_vertuo_230ml.png" alt="#" />230ML</div>
+                    </div>
+                    <p class="capsule_price">930원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">부드럽고 균형잡힌 맛의 커피</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_coffee_fortado.png" alt="#" />
+                    <p class="capsule_title">포르타도</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 8</div>
+                      <div class="size"><img src="../img/icon_vertuo_150ml.png" alt="#" />150ML</div>
+                    </div>
+                    <p class="capsule_price">820원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">강렬함과 풀 바디감</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_coffee_arondio.png" alt="#" />
+                    <p class="capsule_title">아론디오</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 3</div>
+                      <div class="size"><img src="../img/icon_vertuo_150ml.png" alt="#" />150ML</div>
+                    </div>
+                    <p class="capsule_price">820원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">곡물향과 부드러운 풍미</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_coffee_inizio.png" alt="#" />
+                    <p class="capsule_title">이니지오</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 4</div>
+                      <div class="size"><img src="../img/icon_vertuo_150ml.png" alt="#" />150ML</div>
+                    </div>
+                    <p class="capsule_price">820원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">꽃향과 곡물향을 지닌 커피</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_coffee_fortado_decaffe.png" alt="#" />
+                    <p class="capsule_title">포르타도 디카페나토</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 8</div>
+                      <div class="size"><img src="../img/icon_vertuo_150ml.png" alt="#" />150ML</div>
+                    </div>
+                    <p class="capsule_price">860원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">강렬함과 풀 바디감</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_coffee_mexico.png" alt="#" />
+                    <p class="capsule_title">멕시코</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 7</div>
+                      <div class="size"><img src="../img/icon_vertuo_230ml.png" alt="#" />230ML</div>
+                    </div>
+                    <p class="capsule_price">990원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      이중 습식 가공으로 우디향과<br />
+                      스파이시향을 지닌 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_coffee_colombia.png" alt="#" />
+                    <p class="capsule_title">콜롬비아</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 5</div>
+                      <div class="size"><img src="../img/icon_vertuo_230ml.png" alt="#" />230ML</div>
+                    </div>
+                    <p class="capsule_price">990원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      습식 가공으로 베리향과<br />
+                      와인향을 지닌 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_coffee_costa_rica.png" alt="#" />
+                    <p class="capsule_title">코스타리카</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 7</div>
+                      <div class="size"><img src="../img/icon_vertuo_150ml.png" alt="#" />150ML</div>
+                    </div>
+                    <p class="capsule_price">930원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      온천수 가공으로 맥아향과<br />
+                      곡물향을 지닌 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_coffee_ethiopia.png" alt="#" />
+                    <p class="capsule_title">에티오피아</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 4</div>
+                      <div class="size"><img src="../img/icon_vertuo_150ml.png" alt="#" />150ML</div>
+                    </div>
+                    <p class="capsule_price">930원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">건식 가공으로 꽃향을 지닌 커피</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="capsule_categori craft_brew">
+            <div class="categori_head">
+              <p class="name">크래프트 브루</p>
+              <p class="copy">커피 위에서 물을 부어내리는 푸어 오버 커피에서 영감을 받은 섬세한 크레마의 커피입니다.</p>
+            </div>
+            <div class="capsule_card_wrap">
+              <ul>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_carafe.png" alt="#" />
+                    <p class="capsule_title">
+                      카라프 푸어오버<br />
+                      스타일
+                    </p>
+                    <div class="capsule_info">
+                      <div class="size pure_over"><img src="../img/icon_vertuo_535ml.png" alt="#" />535ML</div>
+                    </div>
+                    <p class="capsule_price">1,500원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">로스팅향과 스모키향</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_carafe_mild.png" alt="#" />
+                    <p class="capsule_title">
+                      카라프 푸어오버<br />
+                      스타일 마일드
+                    </p>
+                    <div class="capsule_info">
+                      <div class="size pure_over"><img src="../img/icon_vertuo_535ml.png" alt="#" />535ML</div>
+                    </div>
+                    <p class="capsule_price">1,500원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">고소한 곡물향, 맥아향</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="capsule_categori barista">
+            <div class="categori_head">
+              <p class="name">바리스타 크리에이션</p>
+              <p class="copy">우유와 함께 즐기기에 완벽한 로스팅과 블렌드의 커피입니다.</p>
+            </div>
+            <div class="capsule_card_wrap">
+              <ul>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_barista_bianco_forte.png" alt="#" />
+                    <p class="capsule_title">비앙코 포르테</p>
+                    <div class="capsule_info">
+                      <div class="size"><img src="../img/icon_vertuo_230ml.png" alt="#" />230ML</div>
+                    </div>
+                    <p class="capsule_price">880원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      우유와 어울리는 진한 맛의<br />
+                      레시피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_barista_bianco_leggero.png" alt="#" />
+                    <p class="capsule_title">비앙코 레제로</p>
+                    <div class="capsule_info">
+                      <div class="size"><img src="../img/icon_vertuo_80ml.png" alt="#" />80ML</div>
+                    </div>
+                    <p class="capsule_price">820원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      우유와 어울리는 부드러운 맛의<br />
+                      레시피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_barista_hazelino_muffin.png" alt="#" />
+                    <p class="capsule_title">헤이즐넛향 · 머핀 커피</p>
+                    <div class="capsule_info">
+                      <div class="size"><img src="../img/icon_vertuo_230ml.png" alt="#" />230ML</div>
+                    </div>
+                    <p class="capsule_price">930원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      헤이즐넌 향이 더해져<br />
+                      비스킷향과 조화를 이루는 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_barista_caramel_cookie.png" alt="#" />
+                    <p class="capsule_title">캐러멜향 · 쿠키 커피</p>
+                    <div class="capsule_info">
+                      <div class="size"><img src="../img/icon_vertuo_230ml.png" alt="#" />230ML</div>
+                    </div>
+                    <p class="capsule_price">930원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      살짝 더해진 캐러멜 향이 커피와 어우러져<br />
+                      버터 풍미 가득한 비스킷 향을 선사하는 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/vertuo_barista_vanilla_custard.png" alt="#" />
+                    <p class="capsule_title">
+                      바닐라향 · 커스터드파이<br />
+                      커피
+                    </p>
+                    <div class="capsule_info">
+                      <div class="size"><img src="../img/icon_vertuo_230ml.png" alt="#" />230ML</div>
+                    </div>
+                  </a>
+                  <p class="capsule_price">930원</p>
+                  <button class="basket"><p>장바구니 담기</p></button>
+
+                  <p class="capsule_comment">
+                    크리미한 바닐라 향이 더해진<br />
+                    부드러운 커피
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- vertuo -->
+
+        <!-- original -->
+        <div class="original_capsule capsule_con">
+          <div class="capsule_text">
+            <h3>클래식한 에스프레소 고압 추출 커피</h3>
+            <p>
+              커피 전문성이 완성한 커피 한 잔<br />
+              언제나 진정한 에스프레소 경험을 선사합니다.
+            </p>
+          </div>
+
+          <div class="search">
+            <form action="">
+              <div class="filter">
+                <p class="filter_text">필터</p>
+                <i class="fa-solid fa-filter"></i>
+              </div>
+              <input class="input_box" type="text" placeholder="검색어를 입력해주세요." />
+              <!-- <label class="align_text">정렬</label> -->
+              <select class="align">
+                <i class="fa-solid fa-caret-down"></i>
+                <option value="1">추천순</option>
+                <option value="2">낮은가격순</option>
+                <option value="3">높은가격순</option>
+                <option value="4">이름순</option>
+              </select>
+            </form>
+          </div>
+
+          <div class="capsule_categori sleve">
+            <div class="categori_head">
+              <p class="name">슬리브 팩</p>
+              <p class="copy">네스프레소에서 엄선한 인기커피를 취향에 따라 즐겨보세요.</p>
+            </div>
+            <div class="capsule_card_wrap">
+              <ul>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img src="../img/capsule/capsules_travel.png" alt="#" />
+                    <p class="capsule_title">커피 트래블 150팩</p>
+                    <p class="capsule_price">105,300원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment"></p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img src="../img/capsule/capsules_best.png" alt="#" />
+                    <p class="capsule_title">베스트셀러 150팩</p>
+                    <p class="capsule_price">100,600원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment"></p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img src="../img/capsule/capsules_original_mild.png" alt="#" />
+                    <p class="capsule_title">오리지널 마일드 팩</p>
+                    <p class="capsule_price">38,400원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      네스프레소가 엄선한<br />
+                      부드러운 마일드 커피로 구성된 팩
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img src="../img/capsule/capsules_original_intense.png" alt="#" />
+                    <p class="capsule_title">오리지널 인텐스 팩</p>
+                    <p class="capsule_price">39,600원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      네스프레소가 엄선한<br />
+                      강렬한 인텐스 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img src="../img/capsule/capsules_barista.png" alt="#" />
+                    <p class="capsule_title">
+                      오리지널 바리스타<br />
+                      크리에이션 팩
+                    </p>
+                    <p class="capsule_price">42,900원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      세계적인 바리스타들의<br />
+                      창의성과 전문성으로 완성한 커피
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="capsule_categori limited">
+            <div class="categori_head">
+              <p class="name">리미티드 에디션</p>
+              <p class="copy">한정 기간 동안만 만나볼 수 있는 특별한 커피를 경험해보세요.</p>
+            </div>
+            <div class="capsule_card_wrap">
+              <ul>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_miami.png" alt="#" />
+                    <p class="capsule_title">마이애미 에스프레소</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 9</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">790원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      기분 좋은 로스팅향과<br />
+                      우디향, 곡물향
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="capsule_categori italiano">
+            <div class="categori_head">
+              <p class="name">이스피라치오네 이탈리아나</p>
+              <p class="copy">이탈리아 각 도시 별 고유의 로스팅 노하우에서 영감을 얻어 완성한 에스프레소를 통해 커피 예술을 경험해보세요.</p>
+            </div>
+            <div class="capsule_card_wrap">
+              <ul>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/capsule_italiana_napoli.png" alt="#" />
+                    <p class="capsule_title">
+                      이스피라치오네<br />
+                      나폴리
+                    </p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 13</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">650원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      오랜 시간 다크 로스팅한<br />
+                      강렬한 로스팅향을 지닌 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/capsule_italiana_kazaar.png" alt="#" />
+                    <p class="capsule_title">
+                      이스피라치오네<br />
+                      팔레르모 카자르
+                    </p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 12</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">650원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      오랜시간 다크로스팅한<br />
+                      스파이시향을 지닌 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/capsule_italiana_ristretto.png" alt="#" />
+                    <p class="capsule_title">
+                      이스피라치오네<br />
+                      리스트레토 이탈리아노
+                    </p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 10</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">650원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      미디엄 다크로스팅한 로스팅향과<br />
+                      과일향이 조화로운 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/capsule_italiana_arpeggio.png" alt="#" />
+                    <p class="capsule_title">
+                      이스피라치오네<br />
+                      피렌체 아르페지오
+                    </p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 9</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">650원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      짧은 시간 다크로스팅한<br />
+                      코코아향을 지닌 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/capsule_italiana_roma.png" alt="#" />
+                    <p class="capsule_title">
+                      이스피라치오네<br />
+                      로마
+                    </p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 8</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">650원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      짧은 시간 라이트로스팅한<br />
+                      부드러운 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/capsule_italiana_venezia.png" alt="#" />
+                    <p class="capsule_title">
+                      이스피라치오네<br />
+                      베네치아
+                    </p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 8</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">650원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      오랜시간 미디엄 다크로스팅한<br />
+                      균형잡힌 풍미의 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_italiana_genova_livanto.png" alt="#" />
+                    <p class="capsule_title">
+                      이스피라치오네<br />
+                      제노바 리반토
+                    </p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 6</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">650원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      오랜 시간 미디엄로스팅한 곡물향과<br />
+                      캐러멜향이 조화로운 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/capsule_italiana_ristretto.png" alt="#" />
+                    <p class="capsule_title">
+                      이스피라치오네 리스트레토<br />
+                      이탈리아노 디카페나토
+                    </p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 10</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">690원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      미디엄 다크로스팅한 로스팅향과<br />
+                      과일향이 조화로운 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_2" src="../img/capsule/capsule_italiana_arpeggio.png" alt="#" />
+                    <p class="capsule_title">
+                      이스피라치오네 피렌체<br />
+                      아르페지오 디카페나토
+                    </p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 9</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">690원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      짧은 시간 다크로스팅한<br />
+                      코코아향을 지닌 커피
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="capsule_categori world">
+            <div class="categori_head">
+              <p class="name">월드 익스플로레이션</p>
+              <p class="copy">커피 한 잔으로 떠나는 세계 여행에 당신을 초대합니다. 당신의 커피 취향을 발견해 보세요.</p>
+            </div>
+            <div class="capsule_card_wrap">
+              <ul>
+                <li class="capsule_card">
+                  <img class="capsule_img_1" src="../img/capsule/capsule_miami.png" alt="#" />
+                  <p class="capsule_title">마이애미 에스프레소</p>
+                  <div class="capsule_info">
+                    <div class="intensity">강도 : 9</div>
+                    <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                  </div>
+                  <p class="capsule_price">790원</p>
+                  <button class="basket"><p>장바구니 담기</p></button>
+
+                  <p class="capsule_comment">
+                    기분 좋은 로스팅향과<br />
+                    우디향, 곡물향
+                  </p>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_world_tokyo_vivalto.png" alt="#" />
+                    <p class="capsule_title">도쿄 비발토 룽고</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 6</div>
+                      <div class="size"><img src="../img/icon_lungo.png" alt="#" />110ML</div>
+                    </div>
+                    <p class="capsule_price">680원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">꽃향과 로스팅향</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_world_shanghai.png" alt="#" />
+                    <p class="capsule_title">상하이 룽고</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 9</div>
+                      <div class="size"><img src="../img/icon_lungo.png" alt="#" />110ML</div>
+                    </div>
+                    <p class="capsule_price">680원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">시트러스향과 베리향</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_world_capetown.png" alt="#" />
+                    <p class="capsule_title">
+                      케이프타운 엔비보<br />
+                      룽고
+                    </p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 10</div>
+                      <div class="size"><img src="../img/icon_lungo.png" alt="#" />110ML</div>
+                    </div>
+                    <p class="capsule_price">680원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">진한 로스티함</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_world_stockholm.png" alt="#" />
+                    <p class="capsule_title">
+                      스톡홀름 포시티오<br />
+                      룽고
+                    </p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 8</div>
+                      <div class="size"><img src="../img/icon_lungo.png" alt="#" />110ML</div>
+                    </div>
+                    <p class="capsule_price">680원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">깊은 풍미와 풍부한 바디</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_world_vienna.png" alt="#" />
+                    <p class="capsule_title">
+                      비엔나 리니지오<br />
+                      룽고
+                    </p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 6</div>
+                      <div class="size"><img src="../img/icon_lungo.png" alt="#" />110ML</div>
+                    </div>
+                    <p class="capsule_price">680원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">부드럽고 균형 잡힌 풍미</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_world_buenos.png" alt="#" />
+                    <p class="capsule_title">
+                      부에노스아이레스<br />
+                      룽고
+                    </p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 4</div>
+                      <div class="size"><img src="../img/icon_lungo.png" alt="#" />110ML</div>
+                    </div>
+                    <p class="capsule_price">680원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">마일드하고 스윗한 풍미</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="capsule_categori master">
+            <div class="categori_head">
+              <p class="name">마스터 오리진</p>
+              <p class="copy">커피가 태어난 원산지에서 영감을 받아 고유의 가공법으로 완성한 싱글 오리진 커피입니다.</p>
+            </div>
+            <div class="capsule_card_wrap">
+              <ul>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_master_india.png" alt="#" />
+                    <p class="capsule_title">인디아</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 11</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">740원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      몬순 가공으로 스파이시향을<br />
+                      지닌 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_master_indonesia.png" alt="#" />
+                    <p class="capsule_title">인도네시아</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 8</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">740원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      습식 탈곡으로 우디향을<br />
+                      지닌 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_master_nicaragua.png" alt="#" />
+                    <p class="capsule_title">니카라과</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 5</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">740원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      블랙 허니 가공으로 꿀향과<br />
+                      곡물향을 지닌 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_master_ethiopia.png" alt="#" />
+                    <p class="capsule_title">에티오피아</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 4</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">740원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      건식 가공으로 꽃향을<br />
+                      지닌 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_master_colombia.png" alt="#" />
+                    <p class="capsule_title">콜롬비아</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 6</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">740원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      늦수확 가공으로 와인향을<br />
+                      지닌 커피
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="capsule_categori barista">
+            <div class="categori_head">
+              <p class="name">바리스타 크리에이션</p>
+              <p class="copy">
+                세계 각지의 뛰어난 바리스타들로부터 영감을 받아 우유 혹은 아이스와 함께 즐기기에<br />
+                완벽한 로스팅과 블랜드의 커피를 완성했습니다.
+              </p>
+            </div>
+            <div class="capsule_card_wrap">
+              <ul>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_barista_corto.png" alt="#" />
+                    <p class="capsule_title">코르토</p>
+                    <div class="capsule_info">
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">690원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      우유와 어울리는 매우 진한<br />
+                      맛의 레시피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_barista_scuro.png" alt="#" />
+                    <p class="capsule_title">스쿠로</p>
+                    <div class="capsule_info">
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">690원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      우유와 어울리는 진하면서<br />
+                      균형잡힌 맛의 레시피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_barista_chiaro.png" alt="#" />
+                    <p class="capsule_title">키아로</p>
+                    <div class="capsule_info">
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">690원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      우유와 어울리는 부드러운<br />
+                      맛의 레시피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_barista_cocoa_truffle.png" alt="#" />
+                    <p class="capsule_title">
+                      코코아향 · 트러플<br />
+                      커피
+                    </p>
+                    <div class="capsule_info">
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">740원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      풍부하고 진한 코코아향이<br />
+                      더해진 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_barista_caramel_creme_brulee.png" alt="#" />
+                    <p class="capsule_title">
+                      캐머멜향 · 크렘브륄레<br />
+                      커피
+                    </p>
+                    <div class="capsule_info">
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">740원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      풍부하면서 크리미한 캐러멜향이<br />
+                      더해진 커피
+                    </p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_barista_vanilla_eclair.png" alt="#" />
+                    <p class="capsule_title">
+                      바닐라향 · 에클레어<br />
+                      커피
+                    </p>
+                    <div class="capsule_info">
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">740원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">
+                      벨벳 같은 바닐라 향이<br />
+                      더해진 부드러운 커피
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="capsule_categori espresso">
+            <div class="categori_head">
+              <p class="name">에스프레소</p>
+              <p class="copy">풍부한 아로마와 뛰어난 균형감을 자랑하는 짧고 강렬한 풍미의 클래식한 에스프레소입니다.</p>
+            </div>
+            <div class="capsule_card_wrap">
+              <ul>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_espresso_capriccio.png" alt="#" />
+                    <p class="capsule_title">카프리치오</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 5</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">590원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">풍부하고 독특한 풍미</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_espresso_volluto.png" alt="#" />
+                    <p class="capsule_title">볼루토</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 4</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">590원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">달콤하고 가벼운 풍미</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_espresso_cosi.png" alt="#" />
+                    <p class="capsule_title">코지</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 4</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">590원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">마일드하고 섬세한 토스트향</p>
+                  </a>
+                </li>
+                <li class="capsule_card">
+                  <a href="../capsule_more/index.html">
+                    <img class="capsule_img_1" src="../img/capsule/capsule_espresso_volluto.png" alt="#" />
+                    <p class="capsule_title">볼루토 디카페나토</p>
+                    <div class="capsule_info">
+                      <div class="intensity">강도 : 4</div>
+                      <div class="size"><img src="../img/icon_espresso.png" alt="#" />40ML</div>
+                    </div>
+                    <p class="capsule_price">690원</p>
+                    <button class="basket"><p>장바구니 담기</p></button>
+
+                    <p class="capsule_comment">달콤하고 가벼운 풍미</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- original -->
+      </div>
+      <!-- section -->
+
+      <!-- footer -->
+      <div class="footer_wrap">
+        <footer>
+          <div class="footer_top">
+            <div class="footer_left">
+              <ul class="top">
+                <li><a href="#">사이트맵</a></li>
+                <li><a href="#">판매이용약관</a></li>
+                <li><a href="#">개인정보 처리방침</a></li>
+                <li><a href="#">쿠키</a></li>
+                <li><a href="#">고객지원</a></li>
+              </ul>
+              <ul class="bottom">
+                <li><a href="#">커피 레시피</a></li>
+                <li><a href="#">용어찾기</a></li>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">채용</a></li>
+                <li><a href="#">웹 접근성</a></li>
+                <li><a href="#">네스프레소 프로페셔널</a></li>
+              </ul>
+            </div>
+
+            <div class="footer_right">
+              <ul>
+                <li>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer_bottom">
+            <div class="footer_logo">
+              <h1>
+                <a href="#">
+                  <img src="../img/logo_nespresso_footer.png" alt="#" />
+                </a>
+              </h1>
+            </div>
+            <p>
+              상호 : 네슬레코리아 유한책임회사 | 대표자 : 카스텐 퀴매 | 사업자등록번호 : 110-86-10110 | 통신판매업신고 : 2014-서울서대문-0247<br />
+              채무지금보증안내 대표번호 : 080-734-111 | 이메일 : club.korea@nespresso.com | 주소 : 서울시 서대문구 충정로 70 웨스트게이트타워 16층
+            </p>
+            <p class="copy">COPYRIGHTⓒNESTLE KOREA INC.ALL RIGHT RESERVED</p>
+          </div>
+        </footer>
+      </div>
+
+      <!-- footer -->
+    </div>
+    <!-- wrap -->
+
+    <script src="../js/header_footer.js"></script>
+    <script src="capsule.js"></script>
+  </body>
+</html>

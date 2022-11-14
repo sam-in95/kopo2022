@@ -280,7 +280,7 @@ header > .menu > .container > li {
 
 .work_wrap {
   width: 100%;
-  height: 2700px;
+  /* height: 2700px; */
   background-color: #fff;
 }
 
@@ -342,7 +342,7 @@ header > .menu > .container > li {
 .work_card_wrap {
   width: var(--wrap);
   position: relative;
-  height: 2300px;
+  /* height: 2300px; */
   margin: 50px auto;
   display: flex;
   flex-wrap: wrap;
@@ -452,7 +452,7 @@ header > .menu > .container > li {
   display: block;
   opacity: 0;
   position: absolute;
-  bottom: 40px;
+  bottom: 20px;
   left: 20px;
   width: 5px;
   height: 2px;

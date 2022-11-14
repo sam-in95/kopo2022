@@ -1,0 +1,118 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JsEX02</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="button" id="toggle">
+    <span class="top"></span>
+    <span class="middle"></span>
+    <span class="bottom"></span>
+  </div>
+  <div class="overlay" id="overlay">
+    <nav class="overlay-menu">
+      <ul>
+        <li class="home close"><a>HOME</a></li>
+        <li class="about close"><a>ABOUT</a></li>
+        <li class="works close"><a>WORKS</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <section id="home" class="section">
+      <div class="wrapper">
+          <div class="shapes">
+            <div class="shape shape-1" style="transform: translate(21px, 859px);"></div>
+            <div class="shape shape-2" style="transform: translate(21px, 859px);"></div>
+            <div class="shape shape-3" style="transform: translate(21px, 859px);"></div>
+          </div>
+          <div class="content">
+            <h1>JiniFong's Portfolio</h1>
+          </div>
+      </div>
+  </section>
+
+  <section id="about" class="section">
+      <div class="about-wrapper">
+          <span class="about-title">About</span>
+      </div>
+      
+      <div class="about-txt">
+        <div class="about-img"></div>
+        <div class="txt">
+          <span class="t1">"</span>
+          <span class="t2" id="about-text"><div class="place"></div></span>
+          <span class="t3">저는 정수 폴리텍에서 코딩을 전공으로 배운 청년 이홍진입니다.<br>
+          현재는 게임회사에 취직하여 게임 제작 실무에 참여하고 있으며,<br>
+          꾸준한 자기개발을 통해 프로그램 활용성을 키워나가고 있습니다.<br>
+          </span>
+          <span class="t1">"</span>
+        </div>
+      </div>
+  </section>
+
+  <section id="Works" class="section">
+      <div class="Works-wrapper">
+        <span class="Works-title show">Works</span>
+        <div class="worksList">
+          <div class="list1">
+            <div class="list1_1 haggen" onclick="window.open('web/haagendazs/index.html', '하겐다즈')">
+              <div class="workName">
+                하겐다즈 리뉴얼 웹 사이트
+              </div>
+            </div>
+            <div class="list1_1 disney"  onclick="window.open('web/disney/index.html', '디즈니')">
+              <div class="workName">
+                디즈니 리뉴얼 웹 사이트
+              </div>
+            </div>
+            <div class="list1_1 streaming"  onclick="window.open('web/streaming/swiper.html', '디즈니')">
+              <div class="workName">
+                뮤직 스트리밍 사이트
+              </div>
+            </div>
+          </div>
+          <div class="list2">
+            <div class="list1">
+              <div class="list1_1 trip" onclick="window.open('pdf/trip.pdf', '하겐다즈')">
+                <div class="workName">
+                  트립닷컴 리뉴얼 어플
+                </div>
+              </div>
+              <div class="list1_1 coupang"  onclick="window.open('web/coupang/index.html', '디즈니')">
+                <div class="workName">
+                  쿠팡이츠 리뉴얼 웹 사이트
+                </div>
+              </div>
+              <div class="list1_1 bows"  onclick="window.open('pdf/bows.pdf', '디즈니')">
+                <div class="workName">
+                  보스웰리아 상세페이지 디자인
+                </div>
+              </div>
+          </div>
+          <div class="list3">
+
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+
+  <!-- <button class="arrow_up">
+      <span class="material_icons">
+          arrow_upward
+      </span>
+  </button> -->
+  
+      
+  <script src="index.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/gsap.min.js" integrity="sha512-6zTDRWNxo8vI6JZYDCwhrJpg5icK3P4HNnW3czsO5Scb3lAoPDam+/wF3eog4hxcl0h44d0XlIcFkuoSaWHQ2g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.3/TextPlugin.min.js" integrity="sha512-DmXIPFuirhMx0rhMJMDQFPGpsb07/8zKu9m5RsxW513Q0ros75qojlaMne6lADGuaf1a0msa9WHAkpHxb86W5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+
+</body></html>

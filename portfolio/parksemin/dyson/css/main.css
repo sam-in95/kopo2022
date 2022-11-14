@@ -1,0 +1,325 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+
+:root {
+  --wrap: 1240px;
+  --dyson_green: #5ead3e;
+}
+
+.header_wrap {
+  position: fixed;
+
+  z-index: 2;
+}
+
+/* =========== banner ============== */
+.banner_wrap {
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+  position: relative;
+}
+
+.banner {
+  width: var(--wrap);
+  height: 900px;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.banner_content {
+  position: absolute;
+  top: 235px;
+  color: #fff;
+}
+
+.banner_small_title {
+  font-weight: 500;
+  color: #c1c1c1;
+  letter-spacing: 0.03em;
+}
+
+.banner_title {
+  font-size: 52px;
+  font-weight: 700;
+  color: #ffffff;
+  letter-spacing: 0.02em;
+  line-height: 65px;
+}
+
+.banner_text {
+  font-size: 24px;
+  color: #c1c1c1;
+  letter-spacing: 0.02em;
+  margin-top: 20px;
+  line-height: 36px;
+}
+.banner_wrap video {
+  width: 100%;
+}
+
+/* =========== banner ============== */
+
+/* =========== main_item ============== */
+.main_item {
+  width: var(--wrap);
+  margin: 80px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_item_box {
+  background-color: #e9e9e9;
+  position: relative;
+  display: flex;
+}
+
+.item_img {
+  position: absolute;
+}
+
+.main_item_left .main_item_box {
+  width: 610px;
+  height: 580px;
+}
+
+.item_img.img_v15 {
+  top: 24px;
+  right: 60px;
+}
+
+.main_item_right .main_item_top .main_item_box {
+  width: 610px;
+  height: 280px;
+  margin-bottom: 20px;
+}
+
+.item_img.img_styler {
+  top: 12px;
+  left: 125px;
+}
+
+.main_item_right .main_item_bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main_item_right .main_item_bottom .main_item_box {
+  width: 295px;
+  height: 280px;
+}
+
+.item_img.img_puri {
+  top: 16px;
+  right: 5px;
+}
+
+.item_img.img_dry {
+  right: -10px;
+}
+
+.item_title {
+  color: #7c7c7c;
+  letter-spacing: 0.02em;
+}
+
+.item_title_1 {
+  font-size: 30px;
+  padding: 44px 0 0 24px;
+  line-height: 50px;
+}
+
+.item_title_2 {
+  font-size: 16px;
+  padding: 22px 0 0 24px;
+  line-height: 30px;
+}
+
+.item_more {
+  font-size: 15px;
+  letter-spacing: 0.02em;
+  color: var(--dyson_green);
+  position: absolute;
+  left: 22px;
+  bottom: 24px;
+  cursor: pointer;
+}
+
+/* =========== main_item ============== */
+
+/* =========== line_banner ============== */
+.line_banner {
+  width: 100%;
+  height: 720px;
+  /* position: relative; */
+}
+
+.text_box {
+  width: 820px;
+  height: 360px;
+  /* position: absolute; */
+}
+
+.text_box_title {
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 24px;
+  padding-top: 90px;
+}
+
+.text_box_text {
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 0.02em;
+  line-height: 30px;
+  margin-top: 40px;
+}
+
+.text_box_more {
+  font-size: 14px;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+}
+
+.line_banner_1 {
+  background: url(../img/line_banner_1.png) no-repeat;
+  background-size: 1920px;
+  margin-top: 100px;
+}
+
+.line_banner_1 .text_box {
+  position: absolute;
+  margin: 154px 0 0 340px;
+  border: 8px solid var(--dyson_green);
+}
+
+.line_banner_1 .text_box_title {
+  color: var(--dyson_green);
+  margin-left: 105px;
+}
+
+.line_banner_1 .text_box_text {
+  color: #fff;
+  margin-left: 105px;
+}
+
+.line_banner_1 .text_box_more {
+  color: var(--dyson_green);
+  margin-top: 73px;
+  margin-left: 105px;
+}
+
+.line_banner_2 {
+  background: url(../img/line_banner_2.png) no-repeat;
+  background-size: 1920px;
+}
+
+.line_banner_2 .text_box {
+  position: absolute;
+  border: 8px solid #ca65a7;
+  text-align: right;
+  margin: 154px 0 0 760px;
+}
+
+.line_banner_2 .text_box_title {
+  color: #ca65a7;
+  margin-right: 105px;
+}
+
+.line_banner_2 .text_box_text {
+  color: #111;
+  margin-right: 105px;
+}
+
+.line_banner_2 .text_box_more {
+  color: #ca65a7;
+  margin-right: 105px;
+  margin-top: 73px;
+}
+/* =========== line_banner ============== */
+
+/* =========== dyson_story ============== */
+.story {
+  width: var(--wrap);
+  margin: 130px auto;
+}
+
+.story_head {
+  text-align: center;
+}
+
+.story_title {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 50px;
+  color: #222;
+}
+
+.story_text {
+  font-size: 20px;
+  letter-spacing: 0.02em;
+  margin-top: 16px;
+  color: #222;
+}
+
+.story_card_wrap {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.story_card {
+  width: 400px;
+  height: 600px;
+  transition: 1s;
+  margin-top: 200px;
+  opacity: 0;
+}
+
+.story_card_1 {
+  /* margin-top: 55px; */
+}
+
+.story_card_2 {
+  /* margin-top: 130px; */
+}
+
+/* .story_card_3 {
+} */
+
+.card_text_box {
+  letter-spacing: 0.02em;
+  margin: 18px 0 0 22px;
+}
+
+.card_categori {
+  font-size: 16px;
+  font-weight: 300;
+  color: #888;
+}
+
+.card_title {
+  font-size: 30px;
+  font-weight: 500;
+  color: #222;
+  line-height: 40px;
+}
+
+.card_text {
+  font-size: 15px;
+  color: #888;
+  margin-top: 8px;
+  line-height: 24px;
+}
+/* =========== dyson_story ============== */

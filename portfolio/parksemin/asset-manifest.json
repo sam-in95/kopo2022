@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/portfolio/parksemin/static/css/main.f21d24e6.css",
+    "main.js": "/portfolio/parksemin/static/js/main.ddde304b.js",
+    "static/js/787.310c8749.chunk.js": "/portfolio/parksemin/static/js/787.310c8749.chunk.js",
+    "static/media/Disket-Mono-Regular.woff2": "/portfolio/parksemin/static/media/Disket-Mono-Regular.8087cb17cab8adbab610.woff2",
+    "static/media/Disket-Mono-Bold.woff2": "/portfolio/parksemin/static/media/Disket-Mono-Bold.04f5248c61ef728c6559.woff2",
+    "index.html": "/portfolio/parksemin/index.html",
+    "main.f21d24e6.css.map": "/portfolio/parksemin/static/css/main.f21d24e6.css.map",
+    "main.ddde304b.js.map": "/portfolio/parksemin/static/js/main.ddde304b.js.map",
+    "787.310c8749.chunk.js.map": "/portfolio/parksemin/static/js/787.310c8749.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f21d24e6.css",
+    "static/js/main.ddde304b.js"
+  ]
+}
