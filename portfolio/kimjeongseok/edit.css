@@ -1,0 +1,421 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EliceDigitalBaeum-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SBAggroB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroB.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    -ms-overflow-style: none;
+}
+ 
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+button {
+    border: 0;
+    outline: none;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+.Clear {
+    clear: both;
+}
+
+
+/* 절취선~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.warp {
+    width: 1920px;
+    height: 970px;
+    margin: 0 auto;
+}
+
+.main {
+    width: 1920px;
+    height: 970px;
+    background-image: url(./img/background2.png);
+    background-repeat: no-repeat;
+    background-size: 1920px 970px;
+}
+
+
+
+.main .tmenu {
+    font-family: 'GongGothicMedium';
+    width: 1920px;
+    height: 140px;
+    background-color: rgba(0, 0, 0, 60%);
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+}
+
+.tmenu .home {
+    font-family: 'SBAggroB';
+    width: 300px;
+    height: 140px;
+    background-color: #ffb700;
+    float: left;
+}
+
+.home {
+    width: 300px;
+    height: 140px;
+    color: #fff;
+    padding: 10px 25px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+    7px 7px 20px 0px rgba(0,0,0,.1),
+    4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+.h3 {
+    background: rgb(250, 212, 106);
+    background: linear-gradient(0deg, rgb(248, 192, 37) 0%, rgb(253, 181, 74) 100%);
+    width: 300px;
+    height: 140px;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    
+}
+
+.h3 h1 {
+    position: relative;
+    display: block;
+    text-align: center;
+    line-height: 35px;
+    font-size: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.h3:before,
+.h3:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(250, 208, 68);
+    transition: all 0.4s ease;
+}
+
+.h3:before {
+    height: 0%;
+    width: 6px;
+}
+
+.h3:after {
+    width: 0%;
+    height: 6px;
+}
+
+.h3:hover{
+    background: transparent;
+    box-shadow: none;
+}
+
+.h3:hover:before {
+    height: 100%;
+}
+
+.h3:hover:after {
+    width: 100%;
+}
+  
+.h3 h1:hover{
+     color: rgb(250, 208, 68);
+}
+
+.h3 h1:before,
+.h3 h1:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+     background: rgb(250, 207, 65);
+    transition: all 0.4s ease;
+}
+
+.h3 h1:before {
+    width: 6px;
+    height: 0%;
+}
+
+.h3 h1:after {
+    width: 0%;
+    height: 6px;
+}
+
+.h3 h1:hover:before {
+    height: 100%;
+}
+
+.h3 h1:hover:after {
+    width: 100%;
+}
+
+
+.tmenu .name {
+    width: 1400px;
+    height: 140px;
+}
+
+.name h1 {
+    float: left;
+    font-size: 48px;
+    color: white;
+    margin-left: 35px;
+    margin-top: 41px;
+    transition: 0.7s;
+}
+
+.name h1:hover {
+    transition: 0.7s;
+    color: #ffb700;
+    cursor: pointer;
+    text-shadow: 5px 5px 2px black;
+}
+
+
+/* 절취선~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.project {
+    margin-left: 150px;
+}
+
+.project .ani {
+    width: 650px;
+    height: 310px;
+    position: relative;
+    float: left;
+    box-shadow: 0 3px 7px 0 rgb(0 0 0 / 50%);
+    transition: 0.5s;
+    padding: 25px;
+    margin-left: 80px;
+    margin-top: 40px;
+}
+
+.project .rin {
+    background-image: url(./img/rin.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 360px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.project .nadeshiko {
+    background-image: url(./img/nadeshiko.jpg);
+    background-repeat: no-repeat;
+    background-size: 700px 360px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.project .ani:hover {
+    background-size: 716px 370px;
+    background-position: -10px -5px;
+}
+
+.ani::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.4);
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: .5s;
+}
+
+.ani .content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    background: none;
+}
+
+.ani .content p {
+    font-family: 'GongGothicMedium';
+    font-size: 38px;
+    text-align: center;
+    color: white;
+    padding-top: 120px;
+    transition: .5s;
+    opacity: 0;
+}
+
+.ani .content::after,
+.ani .content::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 0%;
+    height: 0%;
+    border-color: white;
+    border-width: 1px;
+    transition: .5s;
+}
+
+.ani .content::after {
+    height: 100%;
+    border-style: solid none;
+}
+
+.ani .content::before {
+    width: 100%;
+    border-style: none solid;
+}
+
+.ani:hover .content p {
+    opacity: 1;
+}
+
+.ani:hover::after {
+    opacity: 1;
+}
+
+.ani:hover .content::after,
+.ani:hover .content::before {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+
+.video1 .modal1 {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 3s all;
+}
+
+.video1 .hidden1 {
+    display: none;
+}
+
+.modal1 .modal_overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.modal1 .modal_content {
+    position: relative;
+    text-align: center;
+}
+
+.modal1 .modal_content button {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    margin-top: -45px;
+    margin-left: -30px;
+    border: none;
+}
+
+
+
+.video2 .modal2 {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 3s all;
+}
+
+.video2 .hidden2 {
+    display: none;
+}
+
+.modal2 .modal_overlay2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.modal2 .modal_content2 {
+    position: relative;
+    text-align: center;
+}
+
+.modal2 .modal_content2 button {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    margin-top: -45px;
+    margin-left: -30px;
+    border: none;
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="edit.css">
+    <script defer src="./edit.js"></script>
+</head>
+<body>
+    <div class="warp">
+        <div class="main">
+
+            <div class="tmenu">
+                <a href="./index.html">
+                <div class="home h3">
+                    <h1><br>홈 <br> Home</h1>
+                </div>
+                </a>
+                <div class="name">
+                    <h1>Project 4 Video Editing</h1>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="video1">
+                    <a id="open" onclick="c();">
+                        <div class="rin ani">
+                            <div class="content">
+                                <p>Click!!</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="modal1 hidden1" onclick="c2();">
+                        <div class="modal_overlay"></div>
+                        <div class="modal_content">
+                            <iframe 
+                                id="youtube"
+                                width="840" 
+                                height="473" 
+                                src="" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                            <button class="button">×</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video2">
+                    <a id="open2" onclick="b();">
+                        <div class="nadeshiko ani">
+                            <div class="content">
+                                <p>Click!</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="modal2 hidden2" onclick="b2();">
+                        <div class="modal_overlay2"></div>
+                        <div class="modal_content2">
+                            <iframe
+                                id="youtube2"
+                                width="840" 
+                                height="473" 
+                                src="" 
+                                title="YouTube video player" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                allowfullscreen>
+                            </iframe>
+                            <button class="button2">×</button>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+
+        </div>
+    </div>
+</body>
+</html>

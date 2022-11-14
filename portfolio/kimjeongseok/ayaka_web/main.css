@@ -1,0 +1,110 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EliceDigitalBaeum-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body {
+    -ms-overflow-style: none;
+    background-color: rgb(156, 156, 156);
+}
+ 
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+button {
+    border: 0;
+    outline: none;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+.slidebox {
+    max-width:1400px;
+    margin:0 auto;
+    position:relative;
+}
+
+.slidebox .slidelist {
+    position:relative;
+    white-space:nowrap;
+    font-size:0;
+    overflow:hidden;
+    margin-top: 80px;
+}
+
+.slidebox .slidelist .slideitem {
+    position:relative;
+    display:inline-block;
+    vertical-align:middle;
+    width:100%;
+    transition:all 1s;
+}
+
+.slidebox .slidelist .slideitem > a {
+    display:block;
+    width:auto;
+    position:relative;
+}
+
+.slidebox .slidelist .slideitem > a img {
+    max-width:100%;
+}
+
+.slidebox .slide-control [class*="control"] label {
+    position:absolute;
+    z-index:10;
+    top:50%;
+    transform:translateY(-50%);
+    padding:20px;
+    border-radius:50%;
+    cursor:pointer;
+}
+
+.slidebox .slide-control [class*="control"] label.prev {
+    left:-50px;
+    background:#333 url('./img/left-arrow.png') center center / 50% no-repeat;
+}
+
+.slidebox .slide-control [class*="control"] label.next {
+    right:-50px;
+    background:#333 url('./img/right-arrow.png') center center / 50% no-repeat;
+}
+
+[name="slide"] {display:none;}
+#slide01:checked ~ .slidelist .slideitem {left:0;}
+#slide02:checked ~ .slidelist .slideitem {left:-100%;}
+
+.slide-control [class*="control"] {display:none;}
+#slide01:checked ~ .slide-control .control01 {display:block;}
+#slide02:checked ~ .slide-control .control02 {display:block;}

@@ -1,0 +1,979 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EliceDigitalBaeum-Bd';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_elice@1.0/EliceDigitalBaeum-Bd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    -ms-overflow-style: none;
+}
+ 
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+button {
+    border: 0;
+    outline: none;
+}
+
+input {
+    border: 0;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+.Clear {
+    clear: both;
+}
+
+
+/* 절취선~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.warp {
+    width: 1920px;
+    height: 970px;
+    margin: 0 auto;
+}
+
+.main {
+    width: 1920px;
+    height: 970px;
+    background-image: url(./img/background.png);
+    background-repeat: no-repeat;
+    background-size: 1920px 970px;
+}
+
+
+
+.main .tmenu {
+    font-family: 'Pretendard-Regular';
+    width: 1920px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 60%);
+}
+
+.tmenu .LV {
+    float: left;
+    width: 130px;
+    height: 130px;
+    background-image: url(./img/level_bk.png);
+    background-repeat: no-repeat;
+    background-size: 130px 130px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 40px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.tmenu .LV h5 {
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 2px;
+}
+
+.tmenu .LV h1 {
+    font-size: 54px;
+    text-align: center;
+    margin-top: -5px;
+    margin-left: 2px;
+}
+
+.tmenu .name {
+    height: 100px;
+    float: left;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+
+.tmenu .name h1 {
+    width: 420px;
+    color: white;
+    font-size: 52px;
+}
+
+.tmenu .name h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0px;
+    height: 4px;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.3s;
+    opacity: 0;
+    margin-top: 60px;
+    background-color: #f9c053;
+}
+
+.tmenu .name h1:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.tmenu .top_modal1 {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 3s all;
+}
+
+.tmenu .top_hidden1 {
+    display: none;
+}
+
+.top_modal1 .top_overlay1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.top_modal1 .top_content1 {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    width: 1322px;
+    height: 700px;
+    border-radius: 10px;
+}
+
+.top_modal1 .top_content1 img {
+    float: left;
+    width: 661px;
+    height: 700px;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.top_content1 .me_box {
+    float: left;
+    width: 661px;
+    height: 700px;
+}
+
+.top_content1 .me_box h1 {
+    font-size: 50px;
+    margin-top: 40px;
+    margin-bottom: 200px;
+}
+
+.top_content1 .me_box p {
+    font-size: 24px;
+}
+
+.top_content1 .buttonT1 {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    right: 0;
+    top: 0;
+    margin-top: -40px;
+}
+
+
+
+.tmenu .m1 {
+    float: right;
+    position: relative;
+    height: 100px;
+    margin-right: 100px;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+.tmenu .m1 h1 {
+    width: 136px;
+    color: white;
+    font-size: 52px;
+}
+
+.tmenu .m1 h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0px;
+    height: 4px;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.3s;
+    opacity: 0;
+    margin-top: 60px;
+    background-color: #f9c053;
+}
+
+.tmenu .m1 h1:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.tmenu .top_modal2 {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 3s all;
+}
+
+.tmenu .top_hidden2 {
+    display: none;
+}
+
+.top_modal2 .top_overlay2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.top_modal2 .top_content2 {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    width: 983px;
+    height: 392px;
+    border-radius: 10px;
+}
+
+.top_modal2 .top_content2 img {
+    border-radius: 10px;
+}
+
+.top_content2 .buttonT2 {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    right: 0;
+    top: 0;
+    margin-top: -40px;
+}
+
+
+
+.tmenu .m2 {
+    height: 100px;
+    float: right;
+    position: relative;
+    margin-right: 100px;
+    margin-top: 18px;
+    cursor: pointer;
+}
+
+.tmenu .m2 h1 {
+    width: 228px;
+    color: white;
+    font-size: 52px;
+}
+
+.tmenu .m2 h1::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0px;
+    height: 4px;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.3s;
+    opacity: 0;
+    margin-top: 60px;
+    background-color: #f9c053;
+}
+
+.tmenu .m2 h1:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.tmenu .top_modal3 {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 3s all;
+}
+
+.tmenu .top_hidden3 {
+    display: none;
+}
+
+.top_modal3 .top_overlay3 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.top_modal3 .top_content3 {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    width: 896px;
+    height: 371px;
+    border-radius: 10px;
+}
+
+.top_modal3 .top_content3 img {
+    border-radius: 10px;
+}
+
+.top_content3 .buttonT3 {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    right: 0;
+    top: 0;
+    margin-top: -40px;
+}
+
+
+/* 절취선~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.center {
+    clear: both;
+    width: 1920px;
+    height: 820px;
+    font-family: 'Pretendard-Regular';
+    background-image: url(./img/character.png);
+    background-repeat: no-repeat;
+    background-size: 640px 784px;
+    background-position: 560px 36px;
+}
+
+.chat {
+    width: 457px;
+    height: 251px;
+    background-image: url(./img/chat_bk.png);
+    background-repeat: no-repeat;
+    background-size: 457px 251px;
+    float: left;
+    margin-left: 130px;
+    margin-top: 180px;
+}
+
+.chat h1 {
+    width: 400px;
+    color: #f9c053;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 25px;
+    margin-left: 28px;
+}
+
+.project {
+    float: right;
+    margin-top: -20px;
+}
+
+.project .pj {
+    font-family: 'EliceDigitalBaeum-Bd';
+    font-weight: normal;
+    width: 296px;
+    height: 152px;
+    background-image: url(./img/project_bk.png);
+    background-repeat: no-repeat;
+    background-size: 296px 152px;
+    margin-top: 20px;
+    margin-right: 45px;
+    cursor: pointer;
+}
+
+.project .p1 img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 34px;
+}
+
+.project .p1 h2 {
+    font-family: 'Pretendard-Regular';
+    font-weight: 300;
+    font-size: 34px;
+    color: #f9c053;
+    float: right;
+    margin-right: 10px;
+    margin-top: 55px;
+}
+
+.project .p1 h1 {
+    font-weight: 300;
+    font-size: 34px;
+    color: white;
+    float: right;
+    margin-top: 95px;
+    margin-right: -27px;
+}
+
+.project .p2 img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-left: 42px;
+    margin-top: 34px;
+}
+
+.project .p2 h2 {
+    font-family: 'Pretendard-Regular';
+    font-weight: 300;
+    font-size: 34px;
+    color: #f9c053;
+    float: right;
+    margin-right: 10px;
+    margin-top: 55px;
+}
+
+.project .p2 h1 {
+    font-weight: 300;
+    font-size: 34px;
+    color: white;
+    float: right;
+    margin-top: 95px;
+    margin-right: -27px;
+}
+
+.project .p3 img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 34px;
+}
+
+.project .p3 h2 {
+    font-family: 'Pretendard-Regular';
+    font-weight: 300;
+    font-size: 34px;
+    color: #f9c053;
+    float: right;
+    margin-right: 10px;
+    margin-top: 55px;
+}
+
+.project .p3 h1 {
+    font-weight: 300;
+    font-size: 34px;
+    color: white;
+    float: right;
+    margin-top: 95px;
+    margin-right: -58px;
+}
+
+.project .p4 img {
+    width: 80px;
+    height: 80px;
+    float: left;
+    margin-left: 40px;
+    margin-top: 34px;
+}
+
+.project .p4 h2 {
+    font-family: 'Pretendard-Regular';
+    font-weight: 300;
+    font-size: 34px;
+    color: #f9c053;
+    float: right;
+    margin-right: 10px;
+    margin-top: 55px;
+}
+
+.project .p4 h1 {
+    font-weight: 300;
+    font-size: 34px;
+    color: white;
+    float: right;
+    margin-top: 95px;
+    margin-right: -58px;
+}
+
+
+/* 절취선~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.preview {
+    clear: both;
+    width: 400px;
+    height: 230px;
+    background-color: #2e2e2e;
+    float: left;
+    border-radius: 5px;
+    margin-top: -100px;
+    margin-left: 50px;
+}
+
+.preview .section input[id*="slide"] {
+    display: none;
+}
+
+.section .slidewarp {
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.section .slidelist {
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.section .slidelist li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    transition: all .5s;
+}
+
+.section .slidelist li a {
+    display: block;
+    position: relative;
+}
+
+.section .slidelist li a img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.section .slidelist label {
+    width: 36px;
+    height: 62px;
+    position: absolute;
+    z-index: 10;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.section .slidelist .left {
+    left: -2px;
+    background: url(./img/left.png) center center / 100% no-repeat;
+}
+
+.section .slidelist .right {
+    right: -2px;
+    background: url(./img/right.png) center center / 100% no-repeat;
+}
+
+.section [id="slide01"]:checked ~ .slidewarp .slidelist li {transform: translateX(0%);}
+.section [id="slide02"]:checked ~ .slidewarp .slidelist li {transform: translateX(-100%);}
+.section [id="slide03"]:checked ~ .slidewarp .slidelist li {transform: translateX(-200%);}
+.section [id="slide04"]:checked ~ .slidewarp .slidelist li {transform: translateX(-300%);}
+
+
+/* 절취선~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+
+.bmenu2 {
+    width: 1400px;
+    height: 85px;
+    background-color: rgba(0, 0, 0, 50%);
+    float: left;
+    margin-left: 50px;
+    margin-top: 44px;
+}
+
+.bmenu2 .mj {
+    font-family: 'Pretendard-Regular';
+    font-weight: 300;
+    font-size: 25px;
+    width: 250px;
+    height: 85px;
+    background-repeat: no-repeat;
+    margin-left: 10px;
+    float: left;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bmenu2 .mj:hover {
+    color: #f0c36f;
+    transition: 0.6s;
+}
+
+.bmenu2 .mj h1 {
+    margin-top: 12px;
+    margin-left: 80px;
+}
+
+
+
+.bmenu2 .m1 {
+    background-image: url(./img/skill.png);
+    background-position: 54px 18px;
+    margin-left: 38px;
+}
+
+.bmenu2 .m1:hover {
+    background-image: url(./img/skill2.png);
+}
+
+.bmenu2 .bot_modal1 {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 3s all;
+}
+
+.bmenu2 .bot_hidden1 {
+    display: none;
+}
+
+.bot_modal1 .bot_overlay1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.bot_modal1 .bot_content1 {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    width: 1300px;
+    height: 600px;
+    border-radius: 10px;
+}
+
+.bot_content1 .skills {
+    float: left;
+    text-align: center;
+}
+
+.bot_content1 .skills img {
+    width: 200px;
+    height: 200px;
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+.bot_content1 .skills h1 {
+    margin-left: 100px;
+}
+
+.bot_content1 .buttonB1 {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    right: 0;
+    top: 0;
+    margin-top: -40px;
+}
+
+
+
+.bmenu2 .m2 {
+    background-image: url(./img/certiofication.png);
+    background-position: 34px 18px;
+    margin-left: 30px;
+}
+
+.bmenu2 .m2:hover {
+    background-image: url(./img/certiofication2.png);
+}
+
+.bmenu2 .bot_modal2 {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 3s all;
+}
+
+.bmenu2 .bot_hidden2 {
+    display: none;
+}
+
+.bot_modal2 .bot_overlay2 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.bot_modal2 .bot_content2 {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    width: 1000px;
+    height: 750px;
+    border-radius: 10px;
+}
+
+.bot_content2 .certificate {
+    float: left;
+    margin-left: 15px;
+}
+
+.bot_content2 .certificate img {
+    width: 479px;
+    height: 639px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.bot_content2 .certificate h1 {
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.bot_content2 .cert h1 {
+    margin-left: 20px;
+}
+
+.bot_content2 .buttonB2 {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    right: 0;
+    top: 0;
+    margin-top: -40px;
+}
+
+
+
+.bmenu2 .m3 {
+    background-image: url(./img/career.png);
+    background-position: 62px 18px;
+}
+
+.bmenu2 .m3:hover {
+    background-image: url(./img/career2.png);
+}
+
+.bmenu2 .bot_modal3 {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 3s all;
+}
+
+.bmenu2 .bot_hidden3 {
+    display: none;
+}
+
+.bot_modal3 .bot_overlay3 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.bot_modal3 .bot_content3 {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    width: 1400px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.bot_content3 .career {
+    margin-top: 20px;
+}
+
+.bot_content3 .career img {
+    width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.bot_content3 .buttonB3 {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    right: 0;
+    top: 0;
+    margin-top: -40px;
+}
+
+
+
+.bmenu2 .m4 {
+    background-image: url(./img/education.png);
+    background-position: 56px 18px;
+}
+
+.bmenu2 .m4:hover {
+    background-image: url(./img/education2.png);
+}
+
+.bmenu2 .bot_modal4 {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 3s all;
+}
+
+.bmenu2 .bot_hidden4 {
+    display: none;
+}
+
+.bot_modal4 .bot_overlay4 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.bot_modal4 .bot_content4 {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    width: 1000px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+.bot_content4 h1 {
+    margin-top: 140px;
+}
+
+.bot_content4 .buttonB4 {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    right: 0;
+    top: 0;
+    margin-top: -40px;
+}
+
+
+
+.bmenu2 .m5 {
+    background-image: url(./img/hobby.png);
+    background-position: 46px 20px;
+}
+
+.bmenu2 .m5:hover {
+    background-image: url(./img/hobby2.png);
+}
+
+.bmenu2 .bot_modal5 {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 3s all;
+}
+
+.bmenu2 .bot_hidden5 {
+    display: none;
+}
+
+.bot_modal5 .bot_overlay5 {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.bot_modal5 .bot_content5 {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    width: 1100px;
+    height: 720px;
+    border-radius: 10px;
+}
+
+.bot_content5 .hobby {
+    float: left;
+}
+
+.bot_content5 .hobby img {
+    width: 500px;
+    height: 279px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 33px;
+}
+
+.bot_content5 .hobby h1 {
+    margin-top: 8px;
+    margin-left: 33px;
+}
+
+.bot_content5 .buttonB5 {
+    position: absolute;
+    font-size: 40px;
+    color: white;
+    background-color: transparent;
+    right: 0;
+    top: 0;
+    margin-top: -40px;
+}
