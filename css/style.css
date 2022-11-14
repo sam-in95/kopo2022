@@ -416,7 +416,7 @@ header > .menu > .container > li {
   height: 414px;
   margin: 0 20px 24px 0;
   position: relative;
-  border: 1px solid #222;
+  /* border: 1px solid #222; */
   box-sizing: border-box;
 }
 
@@ -439,8 +439,12 @@ header > .menu > .container > li {
 .work_card_img {
   width: 340px;
   height: 380px;
-  background-color: #eee;
   position: relative;
+}
+
+.work_card_img img {
+  width: 340px;
+  height: 414px;
 }
 
 .work_card_img::after {

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $(window).scroll(function(){
+          if($(this).scrollTop() > 100){
+            $(".topbar").css({"opacity" : "0.5"})
+          }
+          else {
+            $(".topbar").css({"opacity" : "1"})
+          }
+        })
+      })
+      </script>
+
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="topbar">
+    </div>
+
+    <div class="semitopbar">
+      <div class="btncontainer">
+        <ul id="mainmenu" style="margin-top: 100px;">
+          <li><button id="box1" type="button"><a style="font-size: 1.5vw;">Home</a></button></li>
+          <li><div id="workb"><a style="font-size: 1.5vw;">Works</a></div>
+            <ul id="submenu">
+              <li><button id="box2" type="button"><a style="font-size: 1.2vw;">Work I</a></button><li>
+              <li><button id="box3" type="button"><a style="font-size: 1.2vw;">Work II</a></button></li>
+              <li><button id="box4" type="button"><a style="font-size: 1.2vw;">Work III</a></button></li>
+              <li><button id="box5" type="button"><a style="font-size: 1.2vw;">Work IV</a></button></li>
+            </ul>
+          </li>
+          <li><button id="box6" type="button"><a style="font-size: 1.5vw;">Info</a></button></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="box1">
+      <!-- <div class="boximg1"></div> -->
+      <div class="menui">
+        <div class="wrapbox">
+          <div class="head">
+            <div id="container">
+              <span id="text1"></span>
+              <span id="text2"></span>
+            </div>
+            
+            <svg id="filters">
+              <defs>
+                <filter id="threshold">
+                  <feColorMatrix in="SourceGraphic"
+                      type="matrix"
+                      values="1 0 0 0 0
+                              0 1 0 0 0
+                              0 0 1 0 0
+                              0 0 0 255 -140" />
+                </filter>
+              </defs>
+            </svg>
+            <div class="profile" style="font-family: 'IBM Plex Sans KR', sans-serif;">
+              폴리텍 정수 17년도 입학생 최락준입니다.<br>
+              플랫폼 개발 예정 기업에서 게임 기획 및 구축과<br>
+              각종 디자인을 병행하고 있습니다.    
+            </div>
+          </div>
+          <div class="foot">
+            <img class="imgprofile" src="img/profile.png">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blank1"></div>
+
+    <div class="box2">
+      <div class="boxwrap">
+          <figure>
+            <section class="img-bg"></section>
+            <img src="img/w1.png" alt="Vite Logo" />
+          </figure>
+
+          <div id="cards1" style="cursor: pointer;" onclick="location.href='works/c1/index.html';">
+            <div class="card" style="background-image: url(img/c1.png);">
+              <div class="card-content">
+                <div class="card-image">
+                  <i class="fa-duotone fa-apartment"></i>
+                </div>
+                <div class="card-info-wrapper">
+                  <div class="card-info">
+                    <i class="fa-duotone fa-apartment"></i>
+                    <div class="card-info-title">
+                    </div>    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div class="blank2"></div>
+
+    <div class="box3">
+      <div class="boxwrap">
+        <figure>
+          <section class="img-bg"></section>
+          <img src="img/w2.png" alt="Vite Logo" />
+        </figure>
+
+        <div id="cards2" style="cursor: pointer;" onclick="location.href='works/c2/index.html';">
+          <div class="card" style="background-image: url(img/c2.png);">
+            <div class="card-content">
+              <div class="card-image">
+                <i class="fa-duotone fa-apartment"></i>
+              </div>
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <i class="fa-duotone fa-apartment"></i>
+                  <div class="card-info-title">
+                  </div>    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blank3"></div>
+
+    <div class="box4">
+      <div class="boxwrap">
+        <figure>
+          <section class="img-bg"></section>
+          <img src="img/w3.png" alt="Vite Logo" />
+        </figure>
+
+        <div id="cards3" style="cursor: pointer;" onclick="location.href='works/c3/c3.pdf';">
+          <div class="card" style="background-image: url(img/c3.png);">
+            <div class="card-content">
+              <div class="card-image">
+                <i class="fa-duotone fa-apartment"></i>
+              </div>
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <i class="fa-duotone fa-apartment"></i>
+                  <div class="card-info-title">
+                  </div>    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blank4"></div>
+
+    <div class="box5">
+      <div class="boxwrap">
+        <figure>
+          <section class="img-bg"></section>
+          <img src="img/w4.png" alt="Vite Logo" />
+        </figure>
+
+        <div id="cards4" style="cursor: pointer;" onclick="location.href='works/c4/c4.pdf';">
+          <div class="card" style="background-image: url(img/c4.png);">
+            <div class="card-content">
+              <div class="card-image">
+                <i class="fa-duotone fa-apartment"></i>
+              </div>
+              <div class="card-info-wrapper">
+                <div class="card-info">
+                  <i class="fa-duotone fa-apartment"></i>
+                  <div class="card-info-title">
+                  </div>    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blank4"></div>
+    <div class="blank5"></div>
+
+    <div class="box6">
+      <div class="boximg6"></div>
+    </div>
+    
+    
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'SCDream9';
+    src: url(font/SCDream9.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html { 
+    scroll-behavior: smooth; 
+  } 
+
+
+body {
+    margin: 0;
+    font-family: 'SCDream9';
+    padding-top: 30px;
+    margin: 0;
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: black;
+}
+
+/* .section {
+    width: 100%;
+} */
+
+
+.container {
+    position: relative;
+    /* width: 20vw; */
+    height: 600px;
+    padding: 20px;
+    margin: auto;
+    /* background-color: rgb(255, 124, 255); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section:nth-child(even) {
+    background-color: rgb(163, 209, 255);
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-size: 40pt;
+    font-family: 'SCDream9';
+    position: absolute;
+    top: 0;
+    margin: 0;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    background-color: rgb(255, 225, 126);
+}
+
+.back-to-position {
+    opacity: 0;
+    transition: 1s;
+}
+
+.back-to-position.to-right {
+    transform: translateX(-150px);
+}
+
+.back-to-position.to-left {
+    transform: translateX(150px);
+}
+
+.show .back-to-position {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.show .back-to-position.delay-0 {
+    transition-delay: 0s;
+}
+
+.show .back-to-position.delay-1 {
+    transition-delay: 0.3s;
+}
+
+
+
+.swiper {
+width: 100%;
+padding-top: 100px;
+padding-bottom: 50px;
+/* border-radius: 10px; */
+}
+
+.swiper-slide {
+background-position: center;
+background-size: cover;
+width: 300px;
+height: 300px;
+/* border-radius: 10px; */
+}
+
+.swiper-slide img {
+display: block;
+width: 100%;
+/* border-radius: 10px; */
+}
+
+.visual {
+/* background: url(./source/visual_bg.png); */
+width: 100vw;
+height: 80vh;
+margin-left: -18vw;
+}
+
+.visual .inner {
+width: 1100px;
+margin: 0 auto;
+position: relative;
+height: 646px;
+}
+
+.visual .title {
+    position: absolute;
+    top: 88px;
+    left: -10px;
+}
+.visual .cup1.image {
+position:absolute;
+bottom: 0;
+right: -47px;
+}
+.visual .cup1.text {
+position: absolute;
+top: 38px;
+right: 171px;
+}
+
+.visual .cup2.image {
+position: absolute;
+bottom: 0;
+right: 162px;
+
+}
+.visual .cup2.text {
+position: absolute;
+top: 321px;
+right: 416px;
+
+}
+.visual .spoon {
+position: absolute;
+bottom:0;
+left: 275px;
+
+}
+
+.visual .fade-in {
+opacity: 0;
+}
+
+
+
+.btns {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: rgb(46, 46, 46);
+    box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btns .container {
+    position: relative;
+    max-width: 900px;
+    padding: 20px;
+    background-color: rgb(46, 46, 46);
+    margin: auto;
+    height: 20px;
+    
+}
+
+.btns_menu {
+    display: flex;
+    justify-content: center;
+}
+
+.btns_menu .btn {
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    /* border: 2px solid rgb(170, 226, 248); */
+    width: 100px;
+    height: 40px;
+    /* border-radius: 5px; */
+    margin: 4px;
+    cursor: pointer;
+    background-color: rgb(46, 46, 46);
+}
+
+.btns_menu .btn:hover {
+    background-color: rgb(87, 87, 87);
+    /* border: 1px solid #ffffff; */
+    border-radius: 10px;
+}
+
+#home{
+    padding-top: 88px;
+}
+
+.arrow-up {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    width: 70px;
+    height: 70px;
+    color: white;
+    background-color: rgb(83, 83, 83);
+    /* border-radius: 10%; */
+    text-align: center;
+    opacity: 0;
+}
+
+.arrow-up span {
+    font-size: 50px;
+}
+
+.arrow-up.show {
+    opacity: 1;
+}
+
+section {
+    width: 97%;
+    height: 100vh;
+    text-align: center;
+    padding-left: 3%;
+    overflow: hidden;
+    margin-left: -1.5vw;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 10vh;
+}
+
+button {
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.sectitle {
+    width:100vw; 
+    height: 2vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    color: aliceblue;
+    padding-top: 18vh;
+}
+
+h2 {
+    font-size: 40pt;
+    font-family: 'SCDream9';
+}

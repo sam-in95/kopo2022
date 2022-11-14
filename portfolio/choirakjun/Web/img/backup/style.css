@@ -1,0 +1,29 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 500vh; /* Used to enable scrolling */
+    background: linear-gradient(180deg, #ffffff 0%, #1fc8db 20%, #1583ac 40%, #0d3c83 60%, #031a3b 80%, #050122 100%);
+  }
+
+  .topbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: black;
+    transition: .5s;
+  }
+  
+  section{
+    width: 100%;
+    height: 100vh;
+  }
+
+  .top{
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: ;
+  }

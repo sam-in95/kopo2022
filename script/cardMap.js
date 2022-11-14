@@ -1,6 +1,16 @@
 let workArray = [
-  { img: "", name: "1번", categori: "UX / UI" },
-  { img: "", name: "2번", categori: "WEB / APP" },
+  {
+    name: "오소이 템플릿 디자인",
+    categori: "Marketing",
+    img: "../works/works_img/parkseoyeon_work01.jpg",
+    link: "../works/parkseoyeon_templatedesign_maketing/index.html",
+  },
+  {
+    name: "휴식 일러스트",
+    categori: "Illustration",
+    img: "../works/works_img/parkseoyeon_work02.jpg",
+    link: "../works/parkseoyeon_restillustration_illustration/index.html",
+  },
   { img: "", name: "3번", categori: "Illustration" },
   { img: "", name: "4번", categori: "Illustration" },
   { img: "", name: "5번", categori: "Marketing" },
@@ -55,9 +65,12 @@ if (workArray.length > 20) {
             .map((el) => {
               return `
               <div class='work_card'>
-                <p class='work_card_name'>${el.name}</p>
-                <p class='work_card_categori'>${el.categori}</p>
-                <div class="work_card_img" data-cursor="card" data-name="view"></div>
+                <a href="${el.link}" target="_blank">
+                  <p class='work_card_name'>${el.name}</p>
+                  <div class="work_card_img">
+                    <img src='${el.img}' alt='' data-cursor="card" data-name="view" />
+                  </div>
+                </a>
               </div>
             `;
             })
@@ -68,9 +81,12 @@ if (workArray.length > 20) {
             .map((el) => {
               return `
               <div class='work_card'>
-                <p class='work_card_name'>${el.name}</p>
-                <p class='work_card_categori'>${el.categori}</p>
-                <div class="work_card_img" data-cursor="card" data-name="view"></div>
+                <a href="${el.link}" target="_blank">
+                  <p class='work_card_name'>${el.name}</p>
+                  <div class="work_card_img">
+                    <img src='${el.img}' alt='' data-cursor="card" data-name="view" />
+                  </div>
+                </a>
               </div>
             `;
             })
@@ -88,9 +104,12 @@ if (workArray.length > 20) {
     .map((el) => {
       return `
       <div class='work_card'>
-      <p class='work_card_name'>${el.name}</p>
-      <p class='work_card_categori'>${el.categori}</p>
-      <div class="work_card_img" data-cursor="card" data-name="view"></div>
+        <a href="${el.link}" target="_blank">
+          <p class='work_card_name'>${el.name}</p>
+          <div class="work_card_img">
+            <img src='${el.img}' alt='' data-cursor="card" data-name="view" />
+          </div>
+        </a>
       </div>
       `;
     })
@@ -150,9 +169,12 @@ workBtn.forEach((btn) => {
                 .map((el) => {
                   return `
                   <div class='work_card'>
-                    <p class='work_card_name'>${el.name}</p>
-                    <p class='work_card_categori'>${el.categori}</p>
-                    <div class="work_card_img" data-cursor="card" data-name="view"></div>
+                    <a href="${el.link}" target="_blank">
+                      <p class='work_card_name'>${el.name}</p>
+                      <div class="work_card_img">
+                        <img src='${el.img}' alt='' data-cursor="card" data-name="view" />
+                      </div>
+                    </a>
                   </div>
                 `;
                 })
@@ -163,9 +185,12 @@ workBtn.forEach((btn) => {
                 .map((el) => {
                   return `
                   <div class='work_card'>
-                    <p class='work_card_name'>${el.name}</p>
-                    <p class='work_card_categori'>${el.categori}</p>
-                    <div class="work_card_img" data-cursor="card" data-name="view"></div>
+                    <a href="${el.link}" target="_blank">
+                      <p class='work_card_name'>${el.name}</p>
+                      <div class="work_card_img">
+                        <img src='${el.img}' alt='' data-cursor="card" data-name="view" />
+                      </div>
+                    </a>
                   </div>
                 `;
                 })
@@ -191,9 +216,12 @@ workBtn.forEach((btn) => {
         .map((el) => {
           return `
           <div class='work_card'>
-          <p class='work_card_name'>${el.name}</p>
-          <p class='work_card_categori'>${el.categori}</p>
-          <div class="work_card_img" data-cursor="card" data-name="view"></div>
+            <a href="${el.link}" target="_blank">
+              <p class='work_card_name'>${el.name}</p>
+              <div class="work_card_img">
+                <img src='${el.img}' alt='' data-cursor="card" data-name="view" />
+              </div>
+            </a>
           </div>
           `;
         })
@@ -208,9 +236,19 @@ let designerArray = [
   { imgGray: "", img: "", name: "공지웅", link: "" },
   { imgGray: "", img: "", name: "김가람", link: "" },
   { imgGray: "", img: "", name: "김정석", link: "" },
-  { imgGray: "", img: "", name: "박서연", link: "" },
+  {
+    imgGray: "",
+    img: "",
+    name: "박서연",
+    link: "../portfolio/parkseoyeon/index.html",
+  },
   { imgGray: "", img: "", name: "박성빈", link: "" },
-  { imgGray: "", img: "", name: "박세민", link: "" },
+  {
+    imgGray: "",
+    img: "",
+    name: "박세민",
+    link: "",
+  },
   { imgGray: "", img: "", name: "서효정", link: "" },
   { imgGray: "", img: "", name: "송화", link: "" },
   { imgGray: "", img: "", name: "신민철", link: "" },
